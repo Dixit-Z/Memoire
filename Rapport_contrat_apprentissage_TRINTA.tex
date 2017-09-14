@@ -15,6 +15,8 @@
 \usepackage{xcolor}
 \usepackage[automake]{glossaries}
 \usepackage[frenchb]{babel}
+
+\setlength{\glsdescwidth}{0.8\textwidth}
 \hypersetup{
     colorlinks = false,
 %    linkcolor={blue!20!black},
@@ -82,8 +84,10 @@
 \newacronym{ETI}{ETI}{Entreprises de Taille Intermédiaire}
 \newacronym{PME}{PME}{Petites et Moyennes Entreprises}
 \newacronym{EPN}{EPN}{Établissements Publics Nationaux}
-\printglossaries
+\printglossary[type=main,title={Acronymes},toctitle={Acronymes}]
 \newpage
+%\printglossary[title={Acronymes},toctitle={Acronymes}]
+%\newpage
 \pagenumbering{arabic}
 \newpage
 \paragraph{Résumé}
@@ -167,7 +171,7 @@ Le groupe apporte une réponse globale aux enjeux de développement et de compé
 \end{figure}
 \newpage
 \subsection{Diversité des secteurs}
-Sopra Steria intervient sur plusieurs secteurs d’activités qui sont divisés en \gls{BU}. La liste exhaustive des secteurs est présentée dans la figure \ref{secteurs}.
+Sopra Steria intervient sur plusieurs secteurs d’activités qui sont matérialisés en \gls{BU}. La liste exhaustive des secteurs est présentée dans la figure \ref{secteurs}.
 \smallbreak
 \begin{figure}[H]
 	\begin{center}		\includegraphics[width=0.80\textwidth,height=0.80\textheight,keepaspectratio]{secteursActivites.png}
@@ -175,7 +179,7 @@ Sopra Steria intervient sur plusieurs secteurs d’activités qui sont divisés 
 		\label{secteurs}
 	\end{center}
 \end{figure}
-Nous nous intéresserons particulièrement au secteur public qui est celui dans lequel j'ai pu réaliser mon stage et mon apprentissage. La figure \ref{parts} représente les parts des différents secteurs. On observe que le secteur public/défense fait partie des trois pôles les plus rentables.
+Nous nous intéresserons particulièrement au secteur public qui est celui dans lequel j'ai pu réaliser mon stage et mon apprentissage. La figure \ref{parts} représente les parts des différents secteurs. On observe que le secteur public/défense fait partie des trois pôles qui produisent le plus de chiffre d'affaire.
 \smallbreak
 \begin{figure}[H]
 	\begin{center}	\includegraphics[width=0.7\textwidth,height=0.8\textheight,keepaspectratio]{secteursSopra.png}
@@ -239,6 +243,7 @@ Le choix retenu par l'État va au-delà des orientations fixées par l’Union E
 \newpage
 \subsection{Champ d'application du système}
 Le système s'adresse aux fournisseurs de l'État. Ils sont identifiés comme étant les entreprises dont le siège social est établi :
+\smallbreak
 \begin{itemize}
 \item en France,
 \item en Union Européenne (hors France),
@@ -246,15 +251,18 @@ Le système s'adresse aux fournisseurs de l'État. Ils sont identifiés comme é
 \item en Polynésie française,
 \item en Nouvelle Calédonie,
 \item les fournisseurs en cours d’immatriculation,
-\item les particuliers,
+\item les particuliers.
 \end{itemize}
+\medbreak
 Il est demandé que les factures soient soumises à des destinataires représentés actuellement uniquement par l'État. L'État est représenté sous formes de différentes composantes :
+\smallbreak
 \begin{itemize}
 \item les \gls{EPN} : Centre National de la Recherche Scientifique, Pôle Emploi, Chambre de Commerce et d'Industrie;
 \item les collectivités territoriales et leurs groupements : villes, métropoles, conseils
 régionaux, conseils départementaux;
 \item les établissements publics de santé : centres hospitaliers, établissements d'hébergement pour personnes âgées dépendantes;
 \item les établissements publics locaux :
+\medbreak
 \begin{itemize}
 \item établissements publics de coopération intercommunale,
 \item établissements publics locaux d’enseignement,
@@ -266,6 +274,7 @@ régionaux, conseils départementaux;
 \end{itemize}
 \newpage
 L'application Chorus Pro 2017 comprend les fonctionnalités suivantes :
+\smallbreak
 \begin{itemize}
 \item la gestion des factures permettant la saisie des factures, leur consultation et le suivi de leur traitement,
 \item la consultation des engagements et des bons de commandes émis par les
@@ -275,7 +284,9 @@ services de l’état,
 \item la gestion des sollicitations apportant de l'aide en cas de difficulté,
 \item la mise à disposition d'un portail permettant de tester les interfaces avec Chorus Pro avant leur mise en production appelé portail de Qualification.
 \end{itemize}
+\medbreak
 Elles sont traduites par des interactions utilisateurs/solution dans la figure \ref{schematisation}.
+\bigbreak
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.8\textwidth,height=\textheight,keepaspectratio]{solutionSimplifiee.png}
@@ -297,6 +308,7 @@ Ces fonctionnalités sont accessibles par divers moyens pour les émetteurs et l
 \textbf{Mode EDI}
 ~~\\
 Ce canal permet d’échanger de manière automatisée et standardisée des flux de tous les types de factures autrement appelées demandes de paiement. Deux modes d’accès sont possibles sur le canal EDI :
+\smallbreak
 \begin{itemize}
 \item Le dépôt en direct : le fournisseur émet lui-même les flux EDI à destination de Chorus Pro 2017,
 \item Le dépôt via un concentrateur technique : les demandes de paiement ne sont pas transmises directement par le fournisseur, mais par un tiers ayant pour rôle de prendre en charge la construction et la gestion des flux EDI. 
@@ -313,18 +325,21 @@ Le portail fournisseur et le portail de qualification : ils offrent aux fourniss
 \clearpage
 \newpage
 \subsection{Contraintes}
-La solution du système Chorus Pro est construite de manière à assurer sa pérennité ainsi que sa maintenabilité. Sopra Steria s'est donc engagé à respecter les normes et standards ouverts du marché, de l'AIFE et de l'interministériels. L’architecture applicative et technique du système s’inscrit dans le respect : 
+La solution du système Chorus Pro est construite de manière à assurer sa pérennité ainsi que sa maintenabilité. Sopra Steria s'est donc engagé à respecter les normes et standards ouverts du marché, de l'AIFE et de l'interministériels. L’architecture applicative et technique du système s’inscrit dans le respect :
+\smallbreak
 \begin{itemize}
 \item	des normes et standards : IP, HTTP, SSL/TLS, XML, Services Web \gls{SOAP} et \gls{REST},
 \item	des référentiels généraux assurant la sécurité et l’interopérabilité avec les applicatifs des autres Ministères et partenaires,
 \item	des principes et des outils du cadre de cohérence technique.
 \end{itemize}
-~~\\
-Le système Chorus Pro 2017 propose une architecture applicative et évolutive basée sur les standards technologiques \gls{J2EE} dans la recherche de l’ homogénéisation et de la minimisation du nombre de technologies utilisées. Les développements reposent sur un socle applicatif et technologique industriel. Ce socle industriel couvre les phases allant du développement à la production et s’inscrit dans la mouvance de DevOps\footnote{Mouvement dans lequel les équipes de réalisation et d'exploitation travaillent ensemble.} permettant d’automatiser au maximum le passage du développement à la production. Les logiciels libres\footnote{Logiciel dont l'utilisation, la modification ou sa duplication sont permises sans obligations légales.} sont privilégiés dans la définition de la solution, tout en prenant garde qu’ils restent compatibles et dans l’esprit du socle technique de Chorus Pro. Le respect de ces différents éléments permet de faciliter la mise en œuvre et de réduire la complexité et les coûts.\\
-La solution Chorus Pro 2017 doit maintenir la qualité de service attendue au fur et à mesure de l’évolution du système. La solution ne doit pas posséder de point de défaillance ou de goulot d'étranglement. Ces contraintes doivent être respectées pendant toute la durée de disponibilité du système soit 99,5\% du temps.\\
-Pour répondre à ces problématique l'architecture du système est extensible, élastique et performante. L'amélioration des performances du système est assurée par l'ajout de serveurs virtuels et/ou physiques (\gls{RAM}, \gls{CPU}, disques). On parle alors de scalabilité horizontalle et verticale correspondant respectivement à la possibilité d'ajouter des serveurs et d'upgrader ces derniers.
+\medbreak
+Le système Chorus Pro 2017 propose une architecture applicative et évolutive basée sur les standards technologiques \gls{J2EE} dans la recherche de l’ homogénéisation et de la minimisation du nombre de technologies utilisées. Les développements reposent sur un socle applicatif et technologique industriel. Ce socle industriel couvre les phases allant du développement à la production et s’inscrit dans la mouvance de DevOps\footnote{Mouvement dans lequel les équipes de réalisation et d'exploitation travaillent ensemble.} permettant d’automatiser au maximum le passage du développement à la production. Les logiciels libres\footnote{Logiciel dont l'utilisation, la modification ou sa duplication sont permises sans obligations légales.} sont privilégiés dans la définition de la solution, tout en prenant garde qu’ils restent compatibles et dans l’esprit du socle technique de Chorus Pro. Le respect de ces différents éléments permet de faciliter la mise en œuvre et de réduire la complexité et les coûts.
+\smallbreak
+La solution Chorus Pro 2017 doit maintenir la qualité de service attendue au fur et à mesure de l’évolution du système. La solution ne doit pas posséder de point de défaillance ou de goulot d'étranglement. Ces contraintes doivent être respectées pendant toute la durée de disponibilité du système soit 99,5\% du temps.
+\smallbreak
+Pour répondre à ces problématique l'architecture du système est extensible, élastique et performante. L'amélioration des performances du système est assurée par l'ajout de serveurs virtuels et/ou physiques (\gls{RAM}, \gls{CPU}, disques). On parle alors de scalabilité horizontale et verticale correspondant respectivement à la possibilité d'ajouter des serveurs et d'upgrader ces derniers.
+\smallbreak
 De plus tous les éléments logiciels, infrastructures matérielles et réseaux du système Chorus Pro 2017 sont redondés et résiliants. Pour assurer la capacité de traitement Chorus Pro offre des mécanismes de répartition de charge sur les différents composants redondés du système et sur la synchronisation et la réplication des données entre les sites d’exploitation. En cas de dysfonctionnement majeur du site principal de production ce système autorise un redémarrage intégral en quelques jours grâce à un \gls{PRA}.  
-\newpage
 \section{Solution proposée par Sopra Steria}
 \subsection{Périmètre du projet}
 Nous sommes plus de 100 collaborateurs à travailler sur le projet Chorus Pro. Nous sommes répartis en 7 pôles comme le montre l'organigramme en figure \ref{organigramme}. J'ai intégré le pôle build en réalisant des tâches transverses (communes à plusieurs pôles) pendant la durée de ma formation à Sopra Stéria.\\
@@ -347,23 +362,29 @@ La solution Chorus Pro doit assurer la continuité avec une solution existante C
 		\end{center}
 \end{figure}
 \subsection{Limites et perspectives}
-Chorus Pro s'inscrit dans un contexte novateur dans lequel le système doit évoluer selon les retours utilisateurs partenaires de la solution. Chaque évolution est analysée afin d'en mesurer les impacts fonctionnels puis évaluée techniquement par les équipes de réalisation. Cela permet à nos équipe de proposer une solution technico-fonctionnelle chiffrée en jour-homme.\\
+Chorus Pro s'inscrit dans un contexte novateur dans lequel le système doit évoluer selon les retours utilisateurs partenaires de la solution. Chaque évolution est analysée afin d'en mesurer les impacts fonctionnels puis évaluée techniquement par les équipes de réalisation. Cela permet à nos équipe de proposer une solution technico-fonctionnelle chiffrée en jour-homme (interne) qui sera facturée en unité d'œuvre\footnote{Répartition des charges en fonction d'un volume et d'un coût.}.\\
 Le groupement Sopra Steria - Capgémini présente des évolutions à forte valeur ajoutée au client dans leur rôle de conseiller. Notre devoir de conseil impose nos équipes à apporter un éclairage de spécialiste quant à la faisabilité de ces nouveaux développements. Le nombre d'évolutions envisagées ne permet pas de réaliser des ateliers de validation dans les temps imposés et leur réalisation ne peuvent pas être prises en compte au même moment. Il est donc important d'avoir une bonne planification pour ne pas impacter toute la chaine de réalisation. Par ailleurs, il faut que les équipes de pilotage s'assurent d'obtenir une charge constante afin de la répartir sur les développeurs dont le nombre ne doit pas fluctuer de manière régulière et en fonction d'un pic de charge.\\ 
 \clearpage
 \newpage
 \subsection{Solution fonctionnelle}
-Les sociétés Sopra Steria Group et Capgemini s’associent sous la forme d’un groupement solidaire pour présenter une offre à l’AIFE. Elles sont soutenues dans cette démarche par la société Axway qui interviendra en sous-traitance dans l’exécution de l’opération.\\
-Ce groupement apporte à l’AIFE son excellente connaissance du contexte et des méthodes de travail. En effet, il montre une présence continue et historique aux côtés de l’AIFE à travers de nombreuses opérations (de construction et de maintenance) récentes et actuelles.\\
+Les sociétés Sopra Steria Group et Capgemini s’associent sous la forme d’un groupement solidaire pour présenter une offre à l’AIFE. Elles sont soutenues dans cette démarche par la société Axway qui interviendra en sous-traitance dans l’exécution de l’opération.
+\smallbreak
+Ce groupement apporte à l’AIFE son excellente connaissance du contexte et des méthodes de travail. En effet, il montre une présence continue et historique aux côtés de l’AIFE à travers de nombreuses opérations (de construction et de maintenance) récentes et actuelles.
+\smallbreak
 Les deux principes directeurs que nous avons retenus dans la constitution de ce groupement sont les suivants~:
+\smallbreak
 \begin{itemize}
 \item quel que soit le champ d’activité projet, les équipes sont intégrées et constituées sur la base des meilleures compétences mobilisées par les membres du groupement,
 \item aucun mécanisme de client/fournisseur n’est mis en place au sein du projet, c’est-à-dire qu’aucune des deux sociétés n’est engagée vis-à-vis de l’autre sur un livrable\footnote{Un livrable représente le résultat d'une prestation.} quel qu’il soit.
 \end{itemize}
+\medbreak
 Le planning du projet est ambitieux mais réalisable, le groupement a ainsi conçu un plan de développement en phase avec cette ambition. Au-delà de la capacité à délivrer, la maîtrise du délai passe par~:
+\smallbreak
 \begin{itemize}
 \item une capacité commune de décider dans les instances et à faire appliquer les décisions,
 \item une anticipation des moyens et une maîtrise des processus pour ôter toute inertie dans le déroulement du projet.
 \end{itemize}
+\smallbreak
 \newpage
 \clearpage
 \section{Architecture du système}
@@ -379,21 +400,23 @@ Le système Chorus Pro 2017 est mis à la disposition de l’ensemble des fourni
 La gestion opérationnelle du système Chorus Pro 2017 (administration, pilotage et suivi de l’activité, support utilisateurs) est réalisée par des agents ou prestataires de service. Ils se répartissent sur deux types d’activité : 
 \begin{itemize}
 \item les administrateurs : ils prennent en charge les tâches d’administration applicative et fonctionnelle du système (gestion du contenu éditorial, gestion des référentiels, modification du paramétrage, etc.) ainsi que les tâches liées au pilotage et au suivi de l’activité du système (gestion des alertes et incidents applicatifs et fonctionnel, analyse et suivi statistiques de l’activité),
-\item Le service de support : il prend en charge le suivi et la gestion des demandes d’assistance et signalements effectués par les utilisateurs du système Chrous Pro 2017 (i.e. les fournisseurs).
+\item Le service de support : il prend en charge le suivi et la gestion des demandes d’assistance et signalements effectués par les utilisateurs du système Chorus Pro 2017 (i.e. les fournisseurs).
 \end{itemize}
 \subsubsection{Les systèmes partenaires}
-Les systèmes partenaires sont l’ensemble des systèmes prenant en charge l’acheminement des demandes de paiement reçues par le système Chorus Pro 2017 jusqu’aux récipiendaires des demandes de paiement. Deux systèmes partenaires sont identifiés pour le système Chrous Pro 2017 :
+Les systèmes partenaires sont l’ensemble des systèmes prenant en charge l’acheminement des demandes de paiement reçues par le système Chorus Pro 2017 jusqu’aux récipiendaires des demandes de paiement. Deux systèmes partenaires sont identifiés pour le système Chorus Pro 2017 :
+\smallbreak
 \begin{itemize}
 \item	Le système d’échange Chorus SE2016\footnote{Plateforme applicative et technique multiservices.},
 \item	Le système d’échange DGFIP.
 \end{itemize}
+\medbreak
 \subsubsection{Les services mutualisés}
 Les services identifiés, à date, sont : les services WS 117 et 118 pour obtenir des informations de référentiels telles que les numéros de SIREN/SIRET de l’INSEE, les fonctions du module SMA pour réaliser l’archivage et la consultation des documents, les fonctions des outils sécurité, notamment, pour le contrôle des signatures, les fonctions de mail pour les envois des notifications et le système de support remedy pour la gestion de demandes de support ne pouvant être traitées au niveau de Chorus Pro 2017. 
-\clearpage
-\newpage
 \subsection{Architecture applicative}
-Ce chapitre décrit les principes et règles mis en œuvre sur le système Chorus Pro 2017 pour identifier et organiser les différents modules applicatifs qui le composent. Ils constitueront un élément de base pour convertir, au fur et à mesure de l’avancée des spécifications fonctionnelles détaillées, les fonctions en services et composants logiciels et les répartir dans les modules applicatifs.\\
+Ce chapitre décrit les principes et règles mis en œuvre sur le système Chorus Pro 2017 pour identifier et organiser les différents modules applicatifs qui le composent. Ils constitueront un élément de base pour convertir, au fur et à mesure de l’avancée des spécifications fonctionnelles détaillées, les fonctions en services et composants logiciels et les répartir dans les modules applicatifs.
+\newpage
 L’architecture de la solution Chorus Pro 2017 doit être conçue en cohérence et dans la continuité des travaux d’urbanisation. Les travaux existants doivent être complétés avec une structuration de la vue applicative du SI. Elle permet de rationaliser les composants applicatifs et les référentiels par une urbanisation des services. Il est nécessaire de structurer les domaines applicatifs suivants :
+\smallbreak
 \begin{itemize}
 \item	demandes de paiement,
 \item	portail,
@@ -402,6 +425,7 @@ L’architecture de la solution Chorus Pro 2017 doit être conçue en cohérence
 \item	utilitaire,
 \item	sécurité.
 \end{itemize}
+\bigbreak
 Pour mettre en œuvre de manière pérenne la construction de la solution Chorus Pro 2017, une première version de la cartographie applicative (cartographie applicatif) a été réalisée. Cette cartographie applicative est un cadre de structuration de la vue applicative. Le schéma de la figure \ref{vueApplicative} présente cette cartographie applicative cible détaillée.\\
 \begin{figure}[H]
 	\begin{center}
@@ -410,8 +434,10 @@ Pour mettre en œuvre de manière pérenne la construction de la solution Chorus
 		\label{vueApplicative}
 	\end{center}
 \end{figure}
+\newpage
 Cette structuration met au centre du SI le domaine applicatif Demandes de paiement.
 Ce domaine s’appuie sur le domaine Utilitaire qui fournit les services mutualisés et transverses suivants :
+\smallbreak
 \begin{itemize}
 \item	service de recherche,
 \item	notification et émission de courriels,
@@ -419,21 +445,25 @@ Ce domaine s’appuie sur le domaine Utilitaire qui fournit les services mutuali
 \item	données référentielles externes (WS117 et WS118 évoqués précédemment),
 \item	service de reconnaissance de caractère : \gls{LAD},\gls{RAD} et \gls{ROC}.
 \end{itemize}
+\medbreak
 Le domaine « échanges » permet d’isoler et de rationaliser les échanges avec les SI externes :
+\smallbreak
 \begin{itemize}
 \item	le portail de services,
 \item	le portail EDI entrant et sortant.
 \end{itemize}
-Cette première structuration de la vue applicative permet d’analyser et de cadrer l’ensemble des applications à construire. D’autre part, la vue applicative doit garantir la complétude de la structuration applicative des fonctions du SI issues de la vue fonctionnelle. Cela doit se traduire par l’identification de liens entre les fonctions de la vue fonctionnelle et les modules applicatifs de services de la vue applicative.\\
+\medbreak
+Cette première structuration de la vue applicative permet d’analyser et de cadrer l’ensemble des applications à construire. D’autre part, la vue applicative doit garantir la complétude de la structuration applicative des fonctions du SI issues de la vue fonctionnelle. Cela doit se traduire par l’identification de liens entre les fonctions de la vue fonctionnelle et les modules applicatifs de services de la vue applicative.
+\smallbreak
 Un module applicatif (MA) est un regroupement de traitements, il existe deux types de modules applicatifs :
 \begin{itemize}
-\item les modules applicatifs de pilotage (MAP) implantent un ou plusieurs Cas d’Utilisation de la Vue Fonctionnelle. Ils pilotent les interactions avec les modules applicatifs de services (MAS),\\
+\item les modules applicatifs de pilotage (MAP) implantent un ou plusieurs Cas d’Utilisation de la Vue Fonctionnelle. Ils pilotent les interactions avec les modules applicatifs de services (MAS),
 \item les modules applicatifs de services (MAS) encapsulent un ensemble cohérent de données métier (silo) et fournissent les services de gestion de ces données en appliquant les règles de gestion associées.
 \end{itemize}
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{archiApplicative.png}
-		\caption{Architecture applicative.}
+		\includegraphics[width=0.5\textwidth, keepaspectratio]{archiApplicative.png}
+		\caption{Architecture applicative du système Chorus Pro.}
 	\end{center}
 \end{figure}
 \clearpage
@@ -447,7 +477,7 @@ Cette structuration illustrée en figure \ref{couches} s’applique aux Modules 
 \end{itemize}
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{couchesModules.png}
+		\includegraphics[width=0.8\textwidth,keepaspectratio]{couchesModules.png}
 		\caption{Simplification schématique de l'architecture en couches.}
 		\label{couches}
 	\end{center}
@@ -635,17 +665,15 @@ La documentation, les commentaires, et la bonne structuration du code est indisp
 \newpage
 \clearpage
 \section{Conclusion}
-Je suis très satisfait d’avoir effectué mon stage ainsi que mon alternance dans l'entrepise Sopra Stéria car cela m’a permis de vivre une forte expérience du travail en entreprise. Grâce à cette formation, j’ai pu m’enrichir énormément autant sur le plan technique que sur le plan humain.\\
-J’ai découvert le travail au sein d'une grande équipe qui est un réel atout et à la fois une contrainte forte. La diversité des profils et la densité des équipes favorisent l'entraide entre les collaborateurs tout en obligeant d'obéir à une certaine rigueur dans la mesure où le travail d'une personne importe à de nombreux autres collaborateurs. J’ai donc redoublé de vigilance lors de l’exécution de mes tâche se en essayant de me fixer des objectifs Spécifiques, Mesurables, Acceptables, Réalistes et Temporellement définis (SMART).\\
+Je suis très satisfait d’avoir effectué mon stage ainsi que mon alternance dans l'entreprise Sopra Stéria car cela m’a permis de vivre une forte expérience du travail en entreprise. Grâce à cette formation, j’ai pu m’enrichir énormément autant sur le plan technique que sur le plan humain.\\
+J’ai découvert le travail au sein d'une grande équipe qui est un réel atout et à la fois une contrainte forte. La diversité des profils et la densité des équipes favorisent l'entraide entre les collaborateurs tout en obligeant d'obéir à une certaine rigueur dans la mesure où le travail d'une personne importe à de nombreux autres collaborateurs. J’ai donc redoublé de vigilance lors de l’exécution de mes tâches en essayant de me fixer des objectifs Spécifiques, Mesurables, Acceptables, Réalistes et Temporellement définis (SMART).\\
 J'ai réussi à progresser techniquement sur des technologies nouvelles et des framework spécifiques me permettant d'accéder à des positions de responsables sur des domaines. J'ai donc pu me familiariser avec les notions de gestion d'équipe notamment concernant la répartition des tâches ainsi que la gestion des risques. Grâce aux conseils de mon tuteur et des autres collaborateurs j'ai pu prendre des initiatives et me positionner sur des tâches représentant un challenge pour moi comme la réalisation de points technique ou la rédaction d'une conception technique d'un chantier. \\
 La bonne humeur au sein du projet m'a permis de faire de magnifiques rencontres malgré l’urgence des livraisons. Le contexte de mon alternance a largement dépassé mes attentes et a enrichi mes compétences professionnelles. J'ai pu mettre en pratique des aspects de l'informatique dans des situations auxquelles je n'avais jamais été confronté.
 Cette année, mon stage a confirmé l'importance du travail en équipe et de conditions de travail optimales au profit des objectifs fixés.
+\newpage
 \paragraph{Conclusion}
 ~~\\\\
-\[NOUVELLE-TRADUCTION-INCOMING\]
-Doing this internship at Sopra Steria was very satisfying for me. I lived a very strong professional experience in this company. Thanks to this internship, I improved a lot in a technical level as much as in a human level. I also discovered big team work which is a huge advantage because every member of the team help each other to make the project progress. It helped me being more thorough in my developments because an inexpert modification may affect the work of many co-workers. I had to focus more on the execution of my tasks.
-
-I learned how to use JAVA EE technology which is essential for web applications development in a company. Every concept approached that i didn’t understand were explained when needed. Thanks to my tutor and the team programmers’ advices, I learned how to use those technologies. The constant project’s teamwork good mood enabled me to make great contacts despite the delivery emergency. In this way, my internship’s conditions exceeded what i was expecting and it improved my professional skills. I had the chance to put informatics aspect into practice in situations that I have never been used to. This year, my internship reinforced the importance of team work and good  conditions in order to fulfill our goals.
+Doing my internship and study program at Sopra Steria was very satisfying for me. I lived a very strong professional experience in this company. Thanks to this training, I improved a lot on a technical level as much as on a human level. I also discovered how to work in a big team: it can be a huge advantage as much as it can be a strong inconvenience. The diversity in such a big team enables colleagues to actually work together and help each other. This requires a lot of rigor since one person’s inexpert modification may affect the work of many co-workers. This is why I was always careful and focused while executing my tasks, especially by following the SMART criterias : the goals that I set for myself were Specific, Measurable, Acceptable, Realistic and Temporally defined. I learned how to improve my skills on new technologies and specific frameworks that allowed me to reach positions in which I had a lot of responsibility. Therefore, I familiarized myself with the notion of team management, especially regarding the way tasks were shared and the way we dealt with risks. Thanks to my tutor and other co-workers’ advice, I took initiative and started working on tasks that represented a challenge for me like the realization of technical points or the writing of the technical conception of a subproject.  The general good mood that prevailed in the team working on this project allowed me to meet a lot of wonderful people despite the urgency of the deliveries. The outcome of my study training program exceeded all expectations I had and allowed me to gain a lot of professional experience and skills. I was able to apply some aspects of IT to situations I never had to face before. This year, my experience confirmed the importance of team work and optimal work conditions in the quest of achieving set goals.  
 \newpage
 \clearpage
 \appendix
