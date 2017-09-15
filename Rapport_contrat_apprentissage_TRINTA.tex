@@ -7,6 +7,7 @@
 \usepackage{hyperref}
 \usepackage{media9}
 \usepackage{float}
+%\usepackage{tocloft} %Package de font
 \usepackage{gensymb}
 \usepackage{textcomp}
 \usepackage{lmodern}
@@ -15,6 +16,10 @@
 \usepackage{xcolor}
 \usepackage[automake]{glossaries}
 \usepackage[frenchb]{babel}
+
+%Trop moche en large
+%\renewcommand\cftsecfont{\LARGE}
+%\renewcommand\cftsecpagefont{\LARGE}
 
 \setlength{\glsdescwidth}{0.8\textwidth}
 \hypersetup{
@@ -35,13 +40,13 @@
 \graphicspath{{./figs/}}
 \setlength\parindent{0pt}
 \renewcommand{\figurename}{Figure}
+\newcommand{\acronymSeparator}{ : }
 \DeclareCaptionLabelSeparator{space}{ : }
 \usepackage[labelsep=space]{caption}
 \renewcommand{\headrulewidth}{1pt} 
 \fancyhead[C]{} 
 \fancyhead[L]{\includegraphics[width=3cm,keepaspectratio]{soprasteriaLogo.png}}
 \fancyhead[R]{\includegraphics[width=2cm,keepaspectratio]{isty.png}}
-
 \renewcommand{\footrulewidth}{0.7pt}
 \fancyfoot[R]{\textbf{\thepage}} 
 \fancyfoot[C]{Rapport contrat de professionalisation}
@@ -58,32 +63,36 @@
 \end{titlepage}
 
 %Définition des termes du glossaire.
-\newacronym{SOAP}{SOAP}{Simple Object Access Protocol}
-\newacronym{REST}{REST}{REpresentational State Transfer}
-\newacronym{LAD}{LAD}{Lecture Automatique de Document}
-\newacronym{RAD}{RAD}{Reconnaissance Automatique de Document}
-\newacronym{ROC}{ROC}{Reconnaissance Optique des Caractères}
-\newacronym{RAE}{RAE}{Reste A Engager}
-\newacronym{RAM}{RAM}{Random Access Memory}
-\newacronym{CPU}{CPU}{Central Processing Unit}
-\newacronym{PRA}{PRA}{Plan de Reprise d'Activité}
-\newacronym{XML}{XML}{Extensible Markup Language}
-\newacronym{MCO}{MCO}{Maintenance en Conditions Opérationnelles}
-\newacronym{API}{API}{Application Programming Interface}
-\newacronym{EDI}{EDI}{Echange de Données Informatisées}
-\newacronym{ESN}{ESN}{Entreprise de Services du Numérique}
-\newacronym{J2EE}{J2EE}{Java 2 Enterprise Edition}
-\newacronym{HTML}{HTML}{HyperText Markup Language - Langage de balisage web}
-\newacronym{ISTY}{ISTY}{Institut des Sciences et Techniques des Yvelines}
-\newacronym{AIFE}{AIFE}{Agence pour l\textquotesingle Informatique Financière de l\textquotesingle État}
-\newacronym{CSS}{CSS}{Cascading Style Sheets}
-\newacronym{SQL}{SQL}{Structured Query Langage}
-\newacronym{BU}{BU}{Business Unit}
-\newacronym{SI}{SI}{Système d'informations}
-\newacronym{DGFiP}{DGFiP}{Direction Générale des Finances Publiques}
-\newacronym{ETI}{ETI}{Entreprises de Taille Intermédiaire}
-\newacronym{PME}{PME}{Petites et Moyennes Entreprises}
-\newacronym{EPN}{EPN}{Établissements Publics Nationaux}
+%\newacronym{SMART}{SMART}{\acronymSeparator Spécifique, Mesurable, Atteignable, Réaliste, Temporellement défini}
+\newacronym{MA}{MA}{\acronymSeparator Module Applicatif}
+\newacronym{MAP}{MAP}{\acronymSeparator Module Applicatif de Pilotage}
+\newacronym{MAS}{MAS}{\acronymSeparator Modules Applicatifs de Services}
+\newacronym{SOAP}{SOAP}{\acronymSeparator Simple Object Access Protocol}
+\newacronym{REST}{REST}{\acronymSeparator REpresentational State Transfer}
+\newacronym{LAD}{LAD}{\acronymSeparator Lecture Automatique de Document}
+\newacronym{RAD}{RAD}{\acronymSeparator Reconnaissance Automatique de Document}
+\newacronym{ROC}{ROC}{\acronymSeparator Reconnaissance Optique des Caractères}
+\newacronym{RAE}{RAE}{\acronymSeparator Reste A Engager}
+\newacronym{RAM}{RAM}{\acronymSeparator Random Access Memory}
+\newacronym{CPU}{CPU}{\acronymSeparator Central Processing Unit}
+\newacronym{PRA}{PRA}{\acronymSeparator Plan de Reprise d'Activité}
+\newacronym{XML}{XML}{\acronymSeparator Extensible Markup Language}
+\newacronym{MCO}{MCO}{\acronymSeparator Maintenance en Conditions Opérationnelles}
+\newacronym{API}{API}{\acronymSeparator Application Programming Interface}
+\newacronym{EDI}{EDI}{\acronymSeparator Echange de Données Informatisées}
+\newacronym{ESN}{ESN}{\acronymSeparator Entreprise de Services du Numérique}
+\newacronym{J2EE}{J2EE}{\acronymSeparator Java 2 Enterprise Edition}
+\newacronym{HTML}{HTML}{\acronymSeparator HyperText Markup Language - Langage de balisage web}
+\newacronym{ISTY}{ISTY}{\acronymSeparator Institut des Sciences et Techniques des Yvelines}
+\newacronym{AIFE}{AIFE}{\acronymSeparator Agence pour l\textquotesingle Informatique Financière de l\textquotesingle État}
+\newacronym{CSS}{CSS}{\acronymSeparator Cascading Style Sheets}
+\newacronym{SQL}{SQL}{\acronymSeparator Structured Query Langage}
+\newacronym{BU}{BU}{\acronymSeparator Business Unit}
+\newacronym{SI}{SI}{\acronymSeparator Système d'informations}
+\newacronym{DGFiP}{DGFiP}{\acronymSeparator Direction Générale des Finances Publiques}
+\newacronym{ETI}{ETI}{\acronymSeparator Entreprises de Taille Intermédiaire}
+\newacronym{PME}{PME}{\acronymSeparator Petites et Moyennes Entreprises}
+\newacronym{EPN}{EPN}{\acronymSeparator Établissements Publics Nationaux}
 \printglossary[type=main,title={Acronymes},toctitle={Acronymes}]
 \newpage
 %\printglossary[title={Acronymes},toctitle={Acronymes}]
@@ -140,7 +149,7 @@ L'objectif de ce rapport de contrat de professionalisation est de rendre compte 
 Enfin, ce rapport présente la réflexion portée sur mon apprentissage personnel en prenant du recul sur les tâches que j'ai réalisées pendant cette période. 
 Ainsi, il constitue une synthèse des connaissances que j'ai acquises au cours de mon contrat de professionnalisation et me permettant de prétendre au titre d'ingénieur.
 \subsection{Destinataires}
-Ce document est destiné à toute personne de l'établissement ISTY participant à mon évaluation ainsi qu'à toutes les personnes m'ayant encadré à Sopra Steria.
+Ce document est destiné à toute personne de l'établissement \gls{ISTY} participant à mon évaluation ainsi qu'à toutes les personnes m'ayant encadré à Sopra Steria.
 \smallbreak
 \subsection{Confidentialité}
 Ce rapport n'est soumis à aucune forme de confidentialité. Le projet réalisé par Sopra Steria relève du domaine public et aucune information divulguée dans ce rapport n'est confidentielle.
@@ -301,31 +310,26 @@ Elles sont traduites par des interactions utilisateurs/solution dans la figure \
 Ces fonctionnalités sont accessibles par divers moyens pour les émetteurs et les récepteurs de factures. Les fonctionnalités accessibles, en fonction du moyen d'interaction avec Chorus Pro, sont synthétisées dans le tableau de la figure \ref{tableauMoyens}.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=0.8\textwidth,height=\textheight,keepaspectratio]{tableauMoyensFonctionnalites.png}
+		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{tableauMoyensFonctionnalites.png}
 		\caption{Moyens d'interaction avec l'application Chorus Pro.}
 		\label{tableauMoyens}
 	\end{center}
 \end{figure}
-~~\\
 \textbf{Mode EDI}
 ~~\\
 Ce canal permet d’échanger de manière automatisée et standardisée des flux de tous les types de factures autrement appelées demandes de paiement. Deux modes d’accès sont possibles sur le canal EDI :
-\smallbreak
 \begin{itemize}
 \item Le dépôt en direct : le fournisseur émet lui-même les flux EDI à destination de Chorus Pro 2017,
 \item Le dépôt via un concentrateur technique : les demandes de paiement ne sont pas transmises directement par le fournisseur, mais par un tiers dont le rôle est de prendre en charge la construction et la gestion des flux EDI. 
 \end{itemize}
-~~\\
+\smallbreak
 \textbf{Mode service}
 ~~\\
 Ce canal permet aux fournisseurs de soumettre des factures et de suivre leur évolution au travers de l'appel de services. Ces services peuvent être consommés par un portail tiers par exemple mis en place par une administration partenaire. Les fonctionnalités offertes par les appels de services sont similaires à celles de la solution web.
-~~\\
-~~\\
+\smallbreak
 \textbf{Mode portail web}
 ~~\\
 Le portail fournisseur et le portail de qualification : ils offrent aux fournisseurs un site web leur permettant de soumettre des demandes de paiement et de suivre leur évolution. Il offre également aux fournisseurs des fonctionnalités de création et gestion de comptes utilisateurs pour identifier les salariés ou agents du fournisseur à même d’utiliser le système Chorus Pro 2017.
-\clearpage
-\newpage
 \subsection{Contraintes}
 La solution du système Chorus Pro est construite de manière à assurer sa pérennité ainsi que sa maintenabilité. Sopra Steria s'est donc engagé à respecter les normes et standards ouverts du marché, de l'AIFE et de l'interministériel. L’architecture applicative et technique du système s’inscrit dans le respect :
 \smallbreak
@@ -335,14 +339,11 @@ La solution du système Chorus Pro est construite de manière à assurer sa pér
 \item	des principes et des outils du cadre de cohérence technique.
 \end{itemize}
 \medbreak
-Le système Chorus Pro 2017 propose une architecture applicative et évolutive basée sur les standards technologiques \gls{J2EE}. Cela permet d'homogénéiser et de minimiser le nombre de technologies utilisées. Les développements reposent sur un socle applicatif qui couvre les phases allant du développement à la production et s’inscrit dans la mouvance de DevOps\footnote{Mouvement dans lequel les équipes de réalisation et d'exploitation travaillent ensemble.}. Il couvre les
-phases allant du développement à la production et permet d’automatiser au maximum le passage de l'une à l'autre. Les logiciels libres\footnote{Logiciel dont l'utilisation, la modification ou sa duplication sont permises sans obligations légales.} sont privilégiés dans la définition de la solution. Il est essentiel de s'assurer qu’ils restent compatibles avec le socle technique de Chorus Pro et qu'ils s'accordent avec son concept. Le respect de ces différents éléments permet de faciliter la mise en œuvre et de réduire la complexité et les coûts.
+Chorus Pro 2017 propose une architecture applicative et évolutive basée sur les standards technologiques \gls{J2EE}. Cela permet d'homogénéiser et de minimiser le nombre de technologies utilisées. Les développements reposent sur un socle applicatif qui couvre les phases allant du développement à la production et s’inscrit dans la mouvance de DevOps\footnote{Mouvement dans lequel les équipes de réalisation et d'exploitation travaillent ensemble.}. Les logiciels libres\footnote{Logiciel dont l'utilisation, la modification ou sa duplication sont permises sans obligations légales.} sont privilégiés dans la définition de la solution. Il est essentiel de s'assurer qu’ils restent compatibles avec le socle technique et qu'ils s'accordent avec notre conception. Le respect de ces différents éléments permet de faciliter la mise en œuvre et de réduire la complexité et les coûts.
 \smallbreak
-La solution Chorus Pro 2017 doit maintenir la qualité de service attendue au fur et à mesure de l’évolution du système. La solution ne doit pas posséder de point de défaillance ou de goulot d'étranglement. Ces contraintes doivent être respectées pendant toute la durée de disponibilité du système soit 99,5\% du temps.
+La qualité de service doit être maintenue au fur et à mesure de l’évolution du système. La solution ne doit pas posséder de point de défaillance ou de goulot d'étranglement. Ces contraintes doivent être respectées pendant toute la durée de disponibilité du système soit 99,5\% du temps. Pour répondre à ces problématiques, l'architecture du système est extensible, élastique et performante. L'amélioration des performances du système est assurée par l'ajout de serveurs virtuels et/ou physiques (\gls{RAM}, \gls{CPU}, disques). On parle alors de scalabilité horizontale et verticale correspondant respectivement à la possibilité d'ajouter des serveurs et d'upgrader ces derniers.
 \smallbreak
-Pour répondre à ces problématiques, l'architecture du système est extensible, élastique et performante. L'amélioration des performances du système est assurée par l'ajout de serveurs virtuels et/ou physiques (\gls{RAM}, \gls{CPU}, disques). On parle alors de scalabilité horizontale et verticale correspondant respectivement à la possibilité d'ajouter des serveurs et d'upgrader ces derniers.
-\smallbreak
-De plus, tous les éléments logiciels, infrastructures matérielles et réseaux du système Chorus Pro 2017 sont redondés et résiliants. Pour assurer la capacité de traitement Chorus Pro offre des mécanismes de répartition de charge sur les différents composants redondés du système. La solution utilise aussi la synchronisation et la réplication des données entre les sites d’exploitation. En cas de dysfonctionnement majeur du site principal de production, ce système autorise un redémarrage intégral en quelques jours grâce à un \gls{PRA}.  
+De plus, tous les éléments logiciels, infrastructures matérielles et réseaux sont redondés et résiliants. Pour assurer la capacité de traitement la solution offre des mécanismes de répartition de charge sur les composants redondés du système. Elle utilise aussi la synchronisation et la réplication des données entre les sites d’exploitation. En cas de dysfonctionnement majeur du site principal de production, ce système autorise un redémarrage intégral en quelques jours grâce à un \gls{PRA}.  
 \section{Solution proposée par Sopra Stéria}
 \subsection{Périmètre du projet}
 Nous sommes plus de cent collaborateurs à travailler sur le projet Chorus Pro. Nous sommes répartis en sept pôles comme le montre l'organigramme en figure \ref{organigramme}. J'ai intégré le pôle build en réalisant des tâches transverses (communes à plusieurs pôles) pendant la durée de ma formation à Sopra Stéria.\\
@@ -359,7 +360,7 @@ Les missions indiquées sur l'organigramme constituent le périmètre du projet 
 La solution Chorus Pro doit assurer la continuité avec une solution existante CPPv1. Il s'agit d'un système de facturation utilisé par le ministère de la justice et le ministère de l’agriculture, qui est amené à être englobé par Chorus Pro. A la date du 11 novembre 2017, les utilisateurs de cette plateforme utiliseront Chorus Pro. La figure \ref{friseCpp} explicite le planning de mise en production de Chorus Pro 2017 avec la prise en charge de la migration des données de CPPv1.
 \begin{figure}[!hp]
 		\begin{center}
-			\includegraphics[width=\textwidth,keepaspectratio]{friseCpp.png}
+			\includegraphics[width=0.9\textwidth,keepaspectratio]{friseCpp.png}
 			\caption{Planning de mise en production et de migration.}
 			\label{friseCpp}
 		\end{center}
@@ -449,7 +450,7 @@ Cette structuration met le domaine applicatif Demandes de paiement au centre du 
 \item	service de reconnaissance de caractères : \gls{LAD}, \gls{RAD} et \gls{ROC}.
 \end{itemize}
 \medbreak
-Le domaine « échanges » permet d’isoler et de rationaliser les échanges avec les SI externes :
+Le domaine « échanges » permet d’isoler et de rationaliser les échanges avec les \gls{SI} externes :
 \smallbreak
 \begin{itemize}
 \item	le portail de services,
@@ -458,9 +459,9 @@ Le domaine « échanges » permet d’isoler et de rationaliser les échanges av
 \medbreak
 Cette première structuration de la vue applicative permet d’analyser et de cadrer l’ensemble des applications à construire. D’autre part, elle doit garantir la complétude de la structuration des fonctions du \gls{SI} issues de la vue fonctionnelle. Cela doit se traduire par l’identification de liens entre les fonctions de la vue fonctionnelle et des modules développés.
 \smallbreak
-Un module applicatif (MA) est un regroupement de traitements, il en existe deux types :
+Un \gls{MA} est un regroupement de traitements, il en existe deux types :
 \begin{itemize}
-\item les modules applicatifs de pilotage (MAP) implantent un ou plusieurs Cas d’Utilisation de la Vue Fonctionnelle. Ils pilotent les interactions avec les Modules Applicatifs de Services (MAS),
+\item les \gls{MAP} implantent un ou plusieurs Cas d’Utilisation de la vue fonctionnelle. Ils pilotent les interactions avec les \gls{MAS},
 \item les MAS encapsulent un ensemble cohérent de données métier et fournissent les services de ces données en appliquant les règles associées.
 \end{itemize}
 \begin{figure}[H]
@@ -472,11 +473,11 @@ Un module applicatif (MA) est un regroupement de traitements, il en existe deux 
 \clearpage
 \newpage
 \subsection{Architecture technique}
-Les développements spécifiques réalisés dans le cadre du projet seront structurés selon le modèle de développement en couches. Le besoin de concevoir le système ainsi découle de la nécessité de structuration pour maîtriser les développements. Cette structuration illustrée en figure \ref{couches} s’applique aux MAP et aux MAS :
+Les développements spécifiques réalisés dans le cadre du projet seront structurés selon le modèle de développement en couches. Le besoin de concevoir le système ainsi découle de la nécessité de structuration pour maîtriser les développements. Cette structuration illustrée en figure \ref{couches} s’applique aux \gls{MAP} et aux \gls{MAS} :
 \smallbreak
 \begin{itemize}
-\item	les MAP implémentent généralement la couche présentation (ou vue dynamique) mais peuvent aussi utiliser les autres couches pour des services locaux
-\item	les MAS utilisent les couches Services, Métier (ou logique métier) et Persistance (Accès aux données) pour implémenter un service
+\item	les \gls{MAP} implémentent généralement la couche présentation (ou vue dynamique) mais peuvent aussi utiliser les autres couches pour des services locaux
+\item	les \gls{MAS} utilisent les couches Services, Métier (ou logique métier) et Persistance (Accès aux données) pour implémenter un service
 \end{itemize}
 \bigbreak
 \begin{figure}[H]
@@ -564,7 +565,7 @@ Les livrables de l'équipe que j'intègre (build) sont des versions de la soluti
 \item des évolutions qui sont des fonctionnalités en plus, non prévues dans le cahier des charges.
 \end{itemize}
 \medbreak
-Une trop grande granularité\footnote{La granularité correspond au numéro de version. Il peut varier selon des modifications correctives, évolutives ou autres actions sur le système.} au niveau des versions des modules et des services applicatifs entraine une lourdeur de la gestion de la configuration. Une multiplication des versions au niveau MAS entraine un impact trop important sur les MAP.
+Une trop grande granularité\footnote{La granularité correspond au numéro de version. Il peut varier selon des modifications correctives, évolutives ou autres actions sur le système.} au niveau des versions des modules et des services applicatifs entraine une lourdeur de la gestion de la configuration. Une multiplication des versions au niveau MAS entraine un impact trop important sur les \gls{MAP}.
 \smallbreak
 L’évolution du numéro de version suit les règles suivantes :
 \smallbreak
@@ -712,15 +713,14 @@ Je suis très satisfait d’avoir effectué mon stage ainsi que mon alternance d
 \medbreak
 J’ai découvert le travail au sein d'une grande équipe qui est un réel atout et à la fois une contrainte forte. La diversité des profils et la densité des équipes favorisent l'entraide entre les collaborateurs tout en obligeant à obéir à une certaine rigueur dans la mesure où le travail d'une personne importe à de nombreux autres collaborateurs. J’ai donc redoublé de vigilance lors de l’exécution de mes tâches en essayant de me fixer des objectifs Spécifiques, Mesurables, Acceptables, Réalistes et Temporellement définis (SMART).
 \medbreak
-J'ai réussi à progresser techniquement sur des technologies nouvelles et des frameworks spécifiques me permettant d'accéder à des positions de responsables sur des domaines. J'ai donc pu me familiariser avec les notions de gestion d'équipes notamment concernant la répartition des tâches ou lors de la gestion des risques. Grâce aux conseils de mon tuteur et des autres collaborateurs j'ai pu prendre des initiatives et me positionner sur des tâches représentant un challenge pour moi, comme la réalisation de points technique ou la rédaction d'une conception technique d'un chantier. \medbreak
+J'ai réussi à progresser techniquement sur des technologies nouvelles et des frameworks spécifiques me permettant d'accéder à des positions de responsables sur des domaines. J'ai donc pu me familiariser avec les notions de gestion d'équipes notamment concernant la répartition des tâches ou lors de la gestion des risques. Grâce aux conseils de mon tuteur et des autres collaborateurs j'ai pu prendre des initiatives et me positionner sur des tâches représentant un challenge pour moi, comme la réalisation de points technique ou la rédaction d'une conception technique d'un chantier. \bigbreak
 La bonne humeur au sein du projet m'a permis de faire de magnifiques rencontres malgré l’urgence des livraisons. Le contexte de mon alternance a largement dépassé mes attentes et a enrichi mes compétences professionnelles. J'ai pu mettre en pratique des aspects de l'informatique dans des situations auxquelles je n'avais jamais été confronté.
 Cette année, mon stage a confirmé l'importance du travail en équipe et de conditions de travail optimales au profit des objectifs fixés.
-\newpage
 \paragraph{Conclusion}
 ~~\\\\
 Doing my internship and study program at Sopra Stéria was very satisfying for me. I lived a very strong professional experience in this company. Thanks to this training, I improved a lot on a technical level as much as on a human level. I also discovered how to work in a big team: it can be a huge advantage as much as it can be a strong inconvenience.
-\smallbreak
-The diversity in such a big team enables colleagues to actually work together and help each other. This requires a lot of rigor since one person’s inexpert modification may affect the work of many co-workers. This is why I was always careful and focused while executing my tasks, especially by following the SMART criterias : the goals that I set for myself were Specific, Measurable, Acceptable, Realistic and Temporally defined.
+\newpage
+The diversity in such a big team enables colleagues to actually work together and help each other. This requires a lot of rigor since one person’s inexpert modification may affect the work of many co-workers. This is why I was always careful and focused while executing my tasks, especially by following the SMART criterias : the goals that I set for myself were Specific, Measurable, Acceptable, Realistic and Temporally defined (SMART).
 \medbreak
 I learned how to improve my skills on new technologies and specific frameworks that allowed me to reach positions in which I had a lot of responsibility. Therefore, I familiarized myself with the notion of team management, especially regarding the way tasks were shared and the way we dealt with risks. Thanks to my tutor and other co-workers’ advice, I took initiative and started working on tasks that represented a challenge for me like the realization of technical points or the writing of the technical conception of a subproject.
 \medbreak
@@ -736,6 +736,14 @@ The general good mood that prevailed in the team working on this project allowed
 \renewcommand\@biblabel[1]{\textbullet}
 \makeatother
 \nocite{*}
+\begingroup
+%\def\sloppy{%
+%  \tolerance 1%
+ % \emergencystretch 1000em%
+  %\vfuzz\hfuzz}
+\raggedright
+\sloppy
 \bibliographystyle{plain}
 \bibliography{dixitsbiblio}
+\endgroup
 \end{document}
