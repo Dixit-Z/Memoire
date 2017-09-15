@@ -99,7 +99,7 @@ Les technologies utilisées pour développer cette solution technique sont~:
 \smallbreak
 \begin{itemize}
 \item[•] \gls{J2EE},
-\item[•] Framework Spring,
+\item[•] Framework\footnote{Ensemble de composants logiciels constituant un socle applicatif cohérent pour des besoins donnés.} Spring,
 \item[•] \gls{HTML} 5,
 \item[•] \gls{CSS} 3,
 \item[•] JavaScript,
@@ -538,17 +538,20 @@ Chacun de ces environnements possède une version de l'application. De cette man
 \newpage
 \section{Ingénierie}
 \subsection{Gestion des exigences}
-Le but des bonnes pratiques de développement est de produire un code robuste (pas de dérive mémoire, pas de dérive des temps de réponse) et de savoir diagnostiquer les anomalies  afin d'être capable de rétablir les services rapidement.\\
-Des exigences ont été définies par les équipes transverses du projet sur la structuration du code notamment : les patterns à respecter ou à proscrire, les points de contention, la scalabilité de l'application et la volumétrie. L'ensemble de ces exigences sont rappelées aux équipes lors de réunions régulières.\\ Elles concernent :
+Les exigences sont définies lors d'échanges entre le client et les titulaires. Celles de type fonctionnel relèvent du respect de règles de gestion spécifiques ou transverses. Elles orientent notamment les tests qui seront effectués en recette. Les exigences techniques quant à elles ont été définies au commencement du projet et évoluent selon les besoins du client. Elles sont présentées comme des bonnes pratiques et leur but est de produire un code robuste (pas de dérive mémoire, pas de dérive des temps de réponse) et de savoir diagnostiquer les anomalies  afin d'être capable de rétablir les services rapidement.
+\smallbreak
+Elles ont été définies par les équipes transverses du projet sur la structuration du code notamment : les patterns à respecter ou à proscrire, les points de contention, la scalabilité de l'application et la volumétrie. L'ensemble de ces exigences sont rappelées aux équipes lors de réunions régulières et sont traçées dans documents accessibles à tous les membres du projet.
+\smallbreak
+Elles concernent :
 \smallbreak
 \begin{itemize}	
 \item l'attendu du contenu des couches présentées précédemment,
-\item le framework et pattern utilisables,
+\item les frameworks (Spring, Hibernate ..) et patterns utilisables (factory, singleton..),
 \item la dépendance entre les couches : mode de communication, entre chaque couche, responsabilité des couches,
-\item la réalisation des tests unitaires (doivent couvrir +65\% de la classe),
+\item la réalisation des tests unitaires\footnote{Test de la bonne execution d'une partie d'un composant.} (doivent couvrir +65\% de chaque classe),
 \item l'utilisation des bons niveaux de log selon le contexte,
-\item la documentation des développements complètes,
-\item les requêtes sql performantes testées sur environnement,
+\item la documentation complète des développements,
+\item les requêtes \gls{SQL} performantes testées sur environnement,
 \item le respect des normes de sécurité.
 \end{itemize}
 \medbreak
@@ -562,7 +565,6 @@ Les livrables de l'équipe que j'intègre (build) sont des versions de la soluti
 \end{itemize}
 \medbreak
 Une trop grande granularité\footnote{La granularité correspond au numéro de version. Il peut varier selon des modifications correctives, évolutives ou autres actions sur le système.} au niveau des versions des modules et des services applicatifs entraine une lourdeur de la gestion de la configuration. Une multiplication des versions au niveau MAS entraine un impact trop important sur les MAP.
-\newpage
 \smallbreak
 L’évolution du numéro de version suit les règles suivantes :
 \smallbreak
@@ -590,14 +592,13 @@ Chacun des sept pôles du projet a une équipe de pilotage. L'une de leur missio
 Chacun des pôles est partagé en domaines. La figure \ref{domaines} représente la répartition des acteurs selon les domaines dans le pôle build, que j'ai intégré lors de ma formation à Sopra Stéria. Les responsables sont chargés de la répartition des tâches sur les ressources disponibles. Ils doivent s'assurer que toutes les tâches relatives à leur domaine peuvent être complétées dans les temps impartis.
 \begin{figure}[H]
 	\begin{center}
-		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{domaines.png}
+		\includegraphics[width=\textwidth,keepaspectratio]{domaines.png}
 		\caption{Domaines du pôle build.}
 		\label{domaines}
 	\end{center}
 \end{figure}
 \subsubsection{Suivi d’avancement}
 C'est grâce à un plan de charges que les responsables peuvent assurer le suivi d'avancement. Il se présente sous la forme d'un fichier excel dans lequel apparaissent plusieurs informations clefs. La granularité des tâches présentes dans le fichier dépend de la complexité de sa réalisation. Découper une réalisation longue en plusieurs sous-tâches permet de diviser le travail sur plusieurs ressources si nécessaire. La figure \ref{pdc} montre un exemple de plan de charges.
-\newpage
 On peut  y voir :
 \begin{itemize}
 \item la ressource : la personne réalisant la tâche,
@@ -640,23 +641,30 @@ Des mesures plus légères peuvent améliorer la rigueur dans le code. J'ai nota
 \newpage
 \section{Challenges et accomplissement}
 Mon expérience de plus d'un an sur le projet m'a permis de monter en compétence sur des sujets fonctionnels et techniques du projet Chorus Pro. Je me suis d'abord positionné en tant que responsable adjoint, puis en tant que responsable. J'ai aussi aborder des notions de gestion d'équipe :
+\smallbreak
 \begin{itemize}
 \item la répartition des tâches,
 \item le suivi d'avancement,
 \item le suivi de la qualité.
 \end{itemize}
-De part mon ambition et ma curiosité professionnelle, j'ai pu prendre en charge des tâches transverses concernant la gestion de la qualité du code fourni mais aussi le partage des bonnes pratiques. Mon implication dans ses tâches m'a permis d'apprendre à communiquer avec nos équipes notamment en réalisant des supports à destination des développeurs. Je travaille régulièrement sur de nouveaux supports dans le but d'améliorer la sécurité applicative et les performances de l'application (respect des standards de sécurité, optimisation des requêtes SQL).\\
+\medbreak
+De part mon ambition et ma curiosité professionnelle, j'ai pu prendre en charge des tâches transverses concernant la gestion de la qualité du code fourni mais aussi le partage des bonnes pratiques.
+\smallbreak
+Mon implication dans ses tâches m'a permis d'apprendre à communiquer avec nos équipes notamment en réalisant des supports à destination des développeurs. Je travaille régulièrement sur de nouveaux supports dans le but d'améliorer la sécurité applicative et les performances de l'application (respect des standards de sécurité, optimisation des requêtes \gls{SQL}).
+\medbreak
 Ces différentes actions m'ont permis d'étendre mon réseau de connaissances au sein de l'entreprise et de m'impliquer davantage dans divers projets de Sopra Stéria, me permettant ainsi, de comprendre l'activité générale et la politique du groupe. Dans cette optique, j'ai participé activement, en interne, à un projet qui propose aujourd'hui aux collaborateurs d'avoir accès à différents retours d'expériences, leur permettant de mieux comprendre les actions, conséquences et erreurs ou réussites à reproduire ou à éviter dans leurs futures missions.
 \newpage
 \section{Analyse critique}
 Le bon déroulement du projet est observable grâce aux trois axes suivants :
+\smallbreak
 \begin{itemize}
 \item le respect des processus,
 \item la bonne communication,
 \item le partage d'une même vision.
 \end{itemize}
+\medbreak
 Beaucoup de processus sont mis en place pour améliorer et optimiser les échanges entre les différents pôles. Ces processus sont essentiels au bon déroulement du projet. Ils permettent d'obtenir plus de clarté, d'organisation et de temps. J'appuierai mon argumentation sur le processus de traitement d'une anomalie décrit sur la figure \ref{cycleVieAnomalie}.\\
-Ce processus fait intervenir 3 acteurs différents : Le client, le pôle de test, le pôle du build. 
+Ce processus fait intervenir 3 acteurs différents : le client, le pôle de test, le pôle du build. 
 \begin{figure}[!hp]
 		\begin{center}
 			\includegraphics[width=1.1\textwidth,keepaspectratio]{cycleAnomalie2.png}
@@ -667,13 +675,17 @@ Ce processus fait intervenir 3 acteurs différents : Le client, le pôle de test
 \clearpage
 \newpage
 Ce processus permet de stabiliser des versions en recette avant de les mettre en production et d'organiser le travail des développeurs. Un stock important d'anomalies signifie que des développements correctifs auront lieu dans les versions suivantes de l'application.\\
-En un an, près de 10 000 anomalies ont été créées par les titulaires (Groupe Sopra Stéria - Capgemini) ou par le client. Pour chacune d'entre elles, une analyse a eu lieu dans les équipes de tests, à la suite de quoi une majorité des anomalies sont retransmises au build. Je porte mon intérêt à ce moment précis du processus et aux moyens par lesquels une amélioration pourrait y être apportée.\\
-A ce moment-là c'est aux équipes du build d'apporter une analyse du problème applicatif et de la corriger dans le cas nominal. D'autres cas sont à envisager :
+En un an, près de 10 000 anomalies ont été identifiées par les titulaires (Groupe Sopra Stéria - Capgemini) ou par le client. Pour chacune d'entre elles, une analyse a eu lieu dans les équipes de tests, à la suite de quoi une majorité des anomalies sont retransmises au build. Je porte mon intérêt à ce moment précis du processus et aux moyens par lesquels une amélioration pourrait y être apportée.\\
+A ce moment-là c'est aux équipes du build d'apporter une analyse du problème applicatif et de la corriger dans le cas nominal.
+\smallbreak
+D'autres cas sont à envisager :
+\smallbreak
 \begin{itemize}
 \item l'anomalie est un faux positif car elle est issue d'un problème de jeux de données érronées ou n'est pas avérée,
 \item l'anomalie est une évolution de l'application et doit donc être traitée par le bureau d'études du projet pour validation,
 \item l'anomalie est un doublon d'une anomalie déjà existante, voire déjà corrigée.
 \end{itemize} 
+\medbreak
 Dans les cas énumérés, l'anomalie est réaffectée aux équipes de tests pour une nouvelle analyse. L'intérêt de la revue de ce processus est de limiter le nombre d'échanges non productifs entre les deux pôles. On peut exploiter les retours d'expérience de testeurs et des développeurs en organisant des réunions permettant un échange sur l'origine des anomalies relatives aux jeux de données. Il est aussi possible de mieux cadrer le processus de renseignement des anomalies lors d'une transmission ou encore de modifier le fonctionnement d'une des briques du processus.\\
 Ces réflexions peuvent être portées sur de nombreux processus. Le projet évolue en ce sens au fil des observations remontées lors des points réguliers entre les différents pôles. Il serait intéressant de considérer les processus les plus lourds pour identifier les bénéfices que cela pourrait apporter au fonctionnement des équipes sur le projet.
 \begin{comment}
@@ -696,15 +708,23 @@ La documentation, les commentaires et la bonne structuration du code est indispe
 \newpage
 \clearpage
 \section{Conclusion}
-Je suis très satisfait d’avoir effectué mon stage ainsi que mon alternance dans l'entreprise Sopra Stéria car cela m’a permis de vivre une forte expérience du travail en entreprise. Grâce à cette formation, j’ai pu m’enrichir énormément autant sur le plan technique que sur le plan humain.\\
-J’ai découvert le travail au sein d'une grande équipe qui est un réel atout et à la fois une contrainte forte. La diversité des profils et la densité des équipes favorisent l'entraide entre les collaborateurs tout en obligeant à obéir à une certaine rigueur dans la mesure où le travail d'une personne importe à de nombreux autres collaborateurs. J’ai donc redoublé de vigilance lors de l’exécution de mes tâches en essayant de me fixer des objectifs Spécifiques, Mesurables, Acceptables, Réalistes et Temporellement définis (SMART).\\
-J'ai réussi à progresser techniquement sur des technologies nouvelles et des frameworks spécifiques me permettant d'accéder à des positions de responsables sur des domaines. J'ai donc pu me familiariser avec les notions de gestion d'équipes notamment concernant la répartition des tâches ou lors de la gestion des risques. Grâce aux conseils de mon tuteur et des autres collaborateurs j'ai pu prendre des initiatives et me positionner sur des tâches représentant un challenge pour moi, comme la réalisation de points technique ou la rédaction d'une conception technique d'un chantier. \\
+Je suis très satisfait d’avoir effectué mon stage ainsi que mon alternance dans l'entreprise Sopra Stéria car cela m’a permis de vivre une forte expérience du travail en entreprise. Grâce à cette formation, j’ai pu m’enrichir énormément autant sur le plan technique que sur le plan humain.
+\medbreak
+J’ai découvert le travail au sein d'une grande équipe qui est un réel atout et à la fois une contrainte forte. La diversité des profils et la densité des équipes favorisent l'entraide entre les collaborateurs tout en obligeant à obéir à une certaine rigueur dans la mesure où le travail d'une personne importe à de nombreux autres collaborateurs. J’ai donc redoublé de vigilance lors de l’exécution de mes tâches en essayant de me fixer des objectifs Spécifiques, Mesurables, Acceptables, Réalistes et Temporellement définis (SMART).
+\medbreak
+J'ai réussi à progresser techniquement sur des technologies nouvelles et des frameworks spécifiques me permettant d'accéder à des positions de responsables sur des domaines. J'ai donc pu me familiariser avec les notions de gestion d'équipes notamment concernant la répartition des tâches ou lors de la gestion des risques. Grâce aux conseils de mon tuteur et des autres collaborateurs j'ai pu prendre des initiatives et me positionner sur des tâches représentant un challenge pour moi, comme la réalisation de points technique ou la rédaction d'une conception technique d'un chantier. \medbreak
 La bonne humeur au sein du projet m'a permis de faire de magnifiques rencontres malgré l’urgence des livraisons. Le contexte de mon alternance a largement dépassé mes attentes et a enrichi mes compétences professionnelles. J'ai pu mettre en pratique des aspects de l'informatique dans des situations auxquelles je n'avais jamais été confronté.
 Cette année, mon stage a confirmé l'importance du travail en équipe et de conditions de travail optimales au profit des objectifs fixés.
 \newpage
 \paragraph{Conclusion}
 ~~\\\\
-Doing my internship and study program at Sopra Stéria was very satisfying for me. I lived a very strong professional experience in this company. Thanks to this training, I improved a lot on a technical level as much as on a human level. I also discovered how to work in a big team: it can be a huge advantage as much as it can be a strong inconvenience. The diversity in such a big team enables colleagues to actually work together and help each other. This requires a lot of rigor since one person’s inexpert modification may affect the work of many co-workers. This is why I was always careful and focused while executing my tasks, especially by following the SMART criterias : the goals that I set for myself were Specific, Measurable, Acceptable, Realistic and Temporally defined. I learned how to improve my skills on new technologies and specific frameworks that allowed me to reach positions in which I had a lot of responsibility. Therefore, I familiarized myself with the notion of team management, especially regarding the way tasks were shared and the way we dealt with risks. Thanks to my tutor and other co-workers’ advice, I took initiative and started working on tasks that represented a challenge for me like the realization of technical points or the writing of the technical conception of a subproject.  The general good mood that prevailed in the team working on this project allowed me to meet a lot of wonderful people despite the urgency of the deliveries. The outcome of my study training program exceeded all expectations I had and allowed me to gain a lot of professional experience and skills. I was able to apply some aspects of IT to situations I never had to face before. This year, my experience confirmed the importance of team work and optimal work conditions in the quest of achieving set goals.  
+Doing my internship and study program at Sopra Stéria was very satisfying for me. I lived a very strong professional experience in this company. Thanks to this training, I improved a lot on a technical level as much as on a human level. I also discovered how to work in a big team: it can be a huge advantage as much as it can be a strong inconvenience.
+\smallbreak
+The diversity in such a big team enables colleagues to actually work together and help each other. This requires a lot of rigor since one person’s inexpert modification may affect the work of many co-workers. This is why I was always careful and focused while executing my tasks, especially by following the SMART criterias : the goals that I set for myself were Specific, Measurable, Acceptable, Realistic and Temporally defined.
+\medbreak
+I learned how to improve my skills on new technologies and specific frameworks that allowed me to reach positions in which I had a lot of responsibility. Therefore, I familiarized myself with the notion of team management, especially regarding the way tasks were shared and the way we dealt with risks. Thanks to my tutor and other co-workers’ advice, I took initiative and started working on tasks that represented a challenge for me like the realization of technical points or the writing of the technical conception of a subproject.
+\medbreak
+The general good mood that prevailed in the team working on this project allowed me to meet a lot of wonderful people despite the urgency of the deliveries. The outcome of my study training program exceeded all expectations I had and allowed me to gain a lot of professional experience and skills. I was able to apply some aspects of IT to situations I never had to face before. This year, my experience confirmed the importance of team work and optimal work conditions in the quest of achieving set goals.  
 \newpage
 \clearpage
 \appendix
