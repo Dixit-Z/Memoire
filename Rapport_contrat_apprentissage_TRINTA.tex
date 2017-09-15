@@ -128,7 +128,7 @@ d’autres points techniques et seront abordés dans ce rapport.
 \newpage
 \paragraph{Abstract}
 ~~\\\\
-During my study training program at Sopra Steria, I took part in a project involving around a hundred people. Sopra Steria company is the digital transformation European leader whose goal, along with Capgemini company, is to enable the issuing of invoices in an electronic way for every State, local community and their public establishment’s invoices emitter. The technical solution, Chorus Pro 2017, will be given to suppliers for free. The AIFE (Agence pour l’Informatique Financière de l’État) is the agency that handles the construction of this solution. Sopra Steria is a major actor in the development of this web application. The technologies used to elaborate this solution are~:\\
+During my study training program at Sopra Steria, I took part in a project involving around a hundred people. Sopra Steria company is the digital transformation European leader whose goal, along with Capgemini company, is to enable the issuing of invoices in an electronic way for every State, local community and their public establishment’s invoices emitter. The technical solution, Chorus Pro 2017, will be given to suppliers for free. The \gls{AIFE} is the agency that handles the construction of this solution. Sopra Steria is a major actor in the development of this web application. The technologies used to elaborate this solution are~:\\
 \begin{itemize}
 \item[•] \gls{J2EE},
 \item[•] Spring Web Flow,
@@ -213,7 +213,7 @@ Le secteur public est subdivisé en quatre agences dont les différents acteurs 
 		\label{agences}
 	\end{center}
 \end{figure}
-J’effectue mon contrat de professionalisation au sein de l'agence 156, dans une équipe déployée chez le client pour le compte de l’AIFE à Noisy-le-Grand (93160 – Seine Saint Denis – France).
+J’effectue mon contrat de professionalisation au sein de l'agence 156, dans une équipe déployée chez le client pour le compte de l’\gls{AIFE} à Noisy-le-Grand (93160 – Seine Saint Denis – France).
 \newpage
 \clearpage
 \section{Contexte du projet Chorus Pro 2017}
@@ -223,7 +223,7 @@ Chorus Pro 2017, dont le logo apparait sur la figure \ref{logoCpp}, est une solu
 \item des flux de données en envoyant et en recevant des fichiers de données structurées grâce au format \gls{XML},
 \item des appels de service web grâce aux \gls{API}.
 \end{itemize}
-Plus d'un million d'entreprise sont concernées et devront obligatoirement adresser leur facture à Chorus Pro.
+Plus d'un million d'entreprises sont concernées et devront obligatoirement adresser leur facture à Chorus Pro.
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=0.3\textwidth, height=\textheight, keepaspectratio]{cpp2017.png}
@@ -232,7 +232,7 @@ Plus d'un million d'entreprise sont concernées et devront obligatoirement adres
 	\end{center}
 \end{figure}
 \subsection{Présentation du client}
-L'AIFE dont le logo est visible sur la figure \ref{logoAife} est un service à compétence nationale créé par le décret du 11 Février 2005, dont les missions majeures sont~:
+L'\gls{AIFE} dont le logo est visible sur la figure \ref{logoAife} est un service à compétence nationale créé par le décret du 11 Février 2005, dont les missions majeures sont~:
 \begin{itemize}
 \item piloter l’urbanisation du \gls{SI}\footnote{Un SI représente tous les élements participant à la gestion et à la diffusion de l'information dans une organisation.} financière de l’État ;
 \item maintenir en condition opérationnelle le système d’informations Chorus, de gestion de la dépense, de la recette non fiscale et de la comptabilité de l’État ;
@@ -248,7 +248,7 @@ L'AIFE dont le logo est visible sur la figure \ref{logoAife} est un service à c
 \end{figure}
 \newpage
 \subsection{Besoin adressé}
-En France, c'est la loi n\degree 2008-776 du 4 août 2008 de modernisation de l'économie qui a introduit la facture au format dématérialisé. Sa mise en œuvre a été fixée au 1er janvier 2012 et cette dématérialisation s’inscrit dans une démarche de rationnalisation et de simplification de l’action publique. Mise dans l'obligation de recevoir les factures électroniques de ses fournisseurs, l'AIFE a déployé le portail "Chorus Factures". Ce dernier assure une transmission normalisée des factures en mode manuel ou en mode flux de données pour les émetteurs déposant un volume de factures important. Ces saisies représentent respectivement des émissions de factures que l'on appellera unitaires et en masse.\\\\
+En France, c'est la loi n\degree 2008-776 du 4 août 2008 de modernisation de l'économie qui a introduit la facture au format dématérialisé. Sa mise en œuvre a été fixée au 1er janvier 2012 et cette dématérialisation s’inscrit dans une démarche de rationnalisation et de simplification de l’action publique. Mise dans l'obligation de recevoir les factures électroniques de ses fournisseurs, l'\gls{AIFE} a déployé le portail "Chorus Factures". Ce dernier assure une transmission normalisée des factures en mode manuel ou en mode flux de données pour les émetteurs déposant un volume de factures important. Ces saisies représentent respectivement des émissions de factures que l'on appellera unitaires et en masse.\\\\
 Parallèlement, des chantiers de dématérialisation ont été menés par la \gls{DGFiP} dans le cadre de la modernisation de son système de gestion informatique.
 L’ordonnance n\degree2014-697 du 26 juin 2014 fixe le
 point de départ d’une nouvelle étape. En effet, elle instaure d'une part, une obligation de dématérialisation des factures pour les fournisseurs et l'obligation de réception pour les administrations. Elle s'imposera aussi bien à l'État qu'aux collectivités et aux établissements publics, selon des modalités et un calendrier défini.
@@ -294,7 +294,7 @@ régionaux, conseils départementaux;
 L'application Chorus Pro 2017 comprend les fonctionnalités suivantes :
 \smallbreak
 \begin{itemize}
-\item la gestion des factures permettant la saisie des factures, leur consultation et le suivi de leur traitement,
+\item la gestion des factures permettant leur saisie, leur consultation et le suivi de leur traitement,
 \item la consultation des engagements et des bons de commandes émis par les
 services de l’État,
 \item la conservation de l’ensemble des factures et des pièces jointes pendant 10 ans,
@@ -338,10 +338,10 @@ Ce canal permet aux fournisseurs de soumettre des factures et de suivre leur év
 ~~\\
 Le portail fournisseur et le portail de qualification : ils offrent aux fournisseurs un site web leur permettant de soumettre des demandes de paiement et de suivre leur évolution. Il offre également aux fournisseurs des fonctionnalités de création et gestion de comptes utilisateurs pour identifier les salariés ou agents du fournisseur à même d’utiliser le système Chorus Pro 2017.
 \subsection{Contraintes}
-La solution du système Chorus Pro est construite de manière à assurer sa pérennité ainsi que sa maintenabilité. Sopra Steria s'est donc engagé à respecter les normes et standards ouverts du marché, de l'AIFE et de l'interministériel. L’architecture applicative et technique du système s’inscrit dans le respect :
+La solution du système Chorus Pro est construite de manière à assurer sa pérennité ainsi que sa maintenabilité. Sopra Steria s'est donc engagé à respecter les normes et standards ouverts du marché, de l'\gls{AIFE} et de l'interministériel. L’architecture applicative et technique du système s’inscrit dans le respect :
 \smallbreak
 \begin{itemize}
-\item	des normes et standards : IP, HTTP, SSL/TLS, XML, Services Web \gls{SOAP} et \gls{REST},
+\item	des normes et standards : IP, HTTP, SSL/TLS, \gls{XML}, Services Web \gls{SOAP} et \gls{REST},
 \item	des référentiels généraux assurant la sécurité et l’interopérabilité avec les applicatifs des autres Ministères et partenaires,
 \item	des principes et des outils du cadre de cohérence technique.
 \end{itemize}
@@ -351,9 +351,9 @@ Chorus Pro 2017 propose une architecture applicative et évolutive basée sur le
 La qualité de service doit être maintenue au fur et à mesure de l’évolution du système. La solution ne doit pas posséder de point de défaillance ou de goulot d'étranglement. Ces contraintes doivent être respectées pendant toute la durée de disponibilité du système soit 99,5\% du temps. Pour répondre à ces problématiques, l'architecture du système est extensible, élastique et performante. L'amélioration des performances du système est assurée par l'ajout de serveurs virtuels et/ou physiques (\gls{RAM}, \gls{CPU}, disques). On parle alors de scalabilité horizontale et verticale correspondant respectivement à la possibilité d'ajouter des serveurs et d'upgrader ces derniers.
 \smallbreak
 De plus, tous les éléments logiciels, infrastructures matérielles et réseaux sont redondés et résiliants. Pour assurer la capacité de traitement la solution offre des mécanismes de répartition de charge sur les composants redondés du système. Elle utilise aussi la synchronisation et la réplication des données entre les sites d’exploitation. En cas de dysfonctionnement majeur du site principal de production, ce système autorise un redémarrage intégral en quelques jours grâce à un \gls{PRA}.  
-\section{Solution proposée par Sopra Stéria}
+\section{Solution proposée par Sopra Steria}
 \subsection{Périmètre du projet}
-Nous sommes plus de cent collaborateurs à travailler sur le projet Chorus Pro. Nous sommes répartis en sept pôles comme le montre l'organigramme en figure \ref{organigramme}. J'ai intégré le pôle build en réalisant des tâches transverses (communes à plusieurs pôles) pendant la durée de ma formation à Sopra Stéria.\\
+Nous sommes plus de cent collaborateurs à travailler sur le projet. Nous sommes répartis en sept pôles comme le montre l'organigramme en figure \ref{organigramme}. J'ai intégré le pôle build en réalisant des tâches transverses (communes à plusieurs pôles) pendant la durée de ma formation à Sopra Steria.\\
 Les missions indiquées sur l'organigramme constituent le périmètre du projet couvert par chacun des pôles. Ils assurent le bon déroulement des montées de version et des corrections applicatives de Chorus Pro sur les environnements de production.\\
 \begin{figure}[!hp]
 		\begin{center}
@@ -364,7 +364,7 @@ Les missions indiquées sur l'organigramme constituent le périmètre du projet 
 \end{figure}
 \clearpage
 \newpage
-La solution Chorus Pro doit assurer la continuité avec une solution existante CPPv1. Il s'agit d'un système de facturation utilisé par le ministère de la justice et le ministère de l’agriculture, qui est amené à être englobé par Chorus Pro. A la date du 11 novembre 2017, les utilisateurs de cette plateforme utiliseront Chorus Pro. La figure \ref{friseCpp} explicite le planning de mise en production de Chorus Pro 2017 avec la prise en charge de la migration des données de CPPv1.
+La solution doit assurer la continuité avec une solution existante CPPv1. Il s'agit d'un système de facturation utilisé par le ministère de la justice et le ministère de l’agriculture, qui est amené à être englobé par Chorus Pro. A la date du 11 novembre 2017, les utilisateurs de cette plateforme utiliseront Chorus Pro. La figure \ref{friseCpp} explicite le planning de mise en production avec la prise en charge de la migration des données de CPPv1.
 \begin{figure}[!hp]
 		\begin{center}
 			\includegraphics[width=0.9\textwidth,keepaspectratio]{friseCpp.png}
@@ -374,13 +374,13 @@ La solution Chorus Pro doit assurer la continuité avec une solution existante C
 \end{figure}
 \subsection{Limites et perspectives}
 Chorus Pro s'inscrit dans un contexte novateur dans lequel le système doit évoluer selon les retours des utilisateurs-partenaires de la solution. Chaque évolution est analysée afin d'en mesurer les impacts fonctionnels puis évaluée techniquement par les équipes de réalisation. Cela permet à nos équipes de proposer une solution technico-fonctionnelle chiffrée en jour-homme\footnote{Unité de mesure correspondant au travail d’une personne pendant une journée. [wikipédia - 2017]} (interne) qui sera facturée en unité d'œuvre\footnote{Répartition des charges en fonction d'un volume et d'un coût.}.\\
-A travers leur rôle de conseiller, le groupement Sopra Stéria - Capgémini présente des évolutions\footnote{Nouveaux développements non prévus dans la tranche ferme de réalisation de la solution.} à forte valeur ajoutée au client. Notre devoir de conseil impose nos équipes à une analyse spécialiste quant à la faisabilité de ces nouveaux développements. Le nombre d'évolutions envisagées ne permet pas de réaliser des ateliers de validation\footnote{Validation client/titulaire de la réalisation d'une évolution.} dans les temps imposés et leur réalisation ne peut pas être prise en compte au même moment. Il est donc important d'avoir une bonne planification pour ne pas impacter toute la chaine de réalisation. Par ailleurs, il faut que les équipes de pilotage s'assurent d'obtenir une charge constante afin de la répartir sur les développeurs dont le nombre ne doit pas fluctuer et en fonction d'un pic de charge.\\ 
+A travers leur rôle de conseiller, le groupement Sopra Steria - Capgémini présente des évolutions\footnote{Nouveaux développements non prévus dans la tranche ferme de réalisation de la solution.} à forte valeur ajoutée au client. Notre devoir de conseil impose à nos équipes de fournir une analyse spécialiste quant à la faisabilité de ces nouveaux développements. Le nombre d'évolutions envisagées ne permet pas de réaliser des ateliers de validation\footnote{Validation client/titulaire de la réalisation d'une évolution.} dans les temps imposés et leur réalisation ne peut pas être prise en compte au même moment. Il est donc important d'avoir une bonne planification pour ne pas impacter toute la chaine de réalisation. Par ailleurs, il faut que les équipes de pilotage s'assurent d'obtenir une charge constante afin de la répartir sur les développeurs dont le nombre ne doit pas fluctuer et en fonction d'un pic de charge.\\ 
 \clearpage
 \newpage
 \subsection{Solution fonctionnelle}
-Les sociétés Sopra Stéria Group et Capgemini s’associent sous la forme d’un groupement solidaire pour présenter une offre à l’AIFE. Elles sont soutenues dans cette démarche par la société Axway qui interviendra en sous-traitance dans l’exécution de l’opération.
+Les sociétés Sopra Steria et Capgemini s’associent sous la forme d’un groupement solidaire pour présenter une offre à l’\gls{AIFE}. Elles sont soutenues dans cette démarche par la société Axway qui interviendra en sous-traitance dans l’exécution de l’opération.
 \smallbreak
-Ce groupement apporte à l’AIFE son excellente connaissance du contexte et des méthodes de travail. En effet, il montre une présence continue et historique aux côtés de l’AIFE à travers de nombreuses opérations de construction et de maintenance récentes et actuelles.
+Ce groupement apporte à l’\gls{AIFE} son excellente connaissance du contexte et des méthodes de travail. En effet, il montre une présence continue et historique aux côtés de ce client à travers de nombreuses opérations de construction et de maintenance récentes et actuelles.
 \smallbreak
 Les deux principes directeurs que nous avons retenus dans la constitution de ce groupement sont les suivants~:
 \smallbreak
@@ -406,7 +406,7 @@ Le planning du projet est ambitieux mais réalisable. Le groupement a ainsi con�
 		\caption{Architecture conceptuelle de Chorus Pro.}
 	\end{center}
 \end{figure}
-Le système Chorus Pro 2017 est mis à la disposition de l’ensemble des fournisseurs et des entités administratives récipiendaires de demandes de paiement. Les fournisseurs peuvent aussi bien être des entreprises privées que des établissements publics. Ce sont des agriculteurs, des prestataires de justice qui effectuent des demandes de paiement au travers de Chorus Pro 2017.
+Le système est mis à la disposition de l’ensemble des fournisseurs et des entités administratives récipiendaires de demandes de paiement. Les fournisseurs peuvent aussi bien être des entreprises privées que des établissements publics. Ce sont des agriculteurs, des prestataires de justice qui effectuent des demandes de paiement au travers de Chorus Pro 2017.
 \subsubsection{Les agents administrateurs et le service support}
 La gestion opérationnelle du système Chorus Pro 2017 (administration, pilotage et suivi de l’activité, support pour les utilisateurs) est réalisée par des agents ou prestataires de service. Ils se répartissent sur deux types d’activité : 
 \begin{itemize}
@@ -424,7 +424,7 @@ Les systèmes partenaires prennent en charge l’acheminement des demandes de pa
 \subsubsection{Les services mutualisés}
 Les services identifiés sont divers, les services WS 117 et 118 servent à obtenir des informations de référentiels telles que les numéros de SIREN/SIRET de l’INSEE. Les fonctions du module SMA permettent de réaliser l’archivage et la consultation des documents, les fonctions des outils sécurité contrôlent notamment les signatures électroniques des documents. Les fonctions de mail sont utilisées pour les envois des notifications tandis que la gestion de demandes de support ne pouvant être traitées par Chorus Pro, est supportée par remedy. 
 \subsection{Architecture applicative}
-Ce chapitre décrit les principes et règles mis en œuvre sur le système pour identifier et organiser les différents modules applicatifs qui le composent. Au fur et à mesure de l’avancée des spécifications fonctionnelles détaillées, ils constitueront un élément de base pour convertir les fonctions en services et en composants logiciels et pour les répartir dans les modules applicatifs. L’architecture de la solution doit être conçue de manière cohérente et dans la continuité des travaux d’urbanisation. Les travaux existants doivent être complétés avec une structuration de la vue applicative du \gls{SI}. Elle permet de rationaliser les composants applicatifs et les référentiels par une urbanisation des services.
+Ce chapitre décrit les principes et règles mis en œuvre sur le système pour identifier et organiser les différents modules applicatifs\footnote{Ensemble de traitements réalisés par des briques logicielles} qui le composent. Au fur et à mesure de l’avancée des spécifications fonctionnelles détaillées, ils constitueront un élément de base pour convertir les fonctions en services et en composants logiciels et pour les répartir dans les modules applicatifs. L’architecture de la solution doit être conçue de manière cohérente et dans la continuité des travaux d’urbanisation. Les travaux existants doivent être complétés avec une structuration de la vue applicative du \gls{SI}. Elle permet de rationaliser les composants applicatifs et les référentiels par une urbanisation des services.
 \newpage
 Il est nécessaire de structurer les domaines applicatifs suivants :
 \smallbreak
@@ -461,7 +461,7 @@ Le domaine « échanges » permet d’isoler et de rationaliser les échanges av
 \smallbreak
 \begin{itemize}
 \item	le portail de services,
-\item	le portail EDI entrant et sortant.
+\item	le portail \gls{EDI} entrant et sortant.
 \end{itemize}
 \medbreak
 Cette première structuration de la vue applicative permet d’analyser et de cadrer l’ensemble des applications à construire. D’autre part, elle doit garantir la complétude de la structuration des fonctions du \gls{SI} issues de la vue fonctionnelle. Cela doit se traduire par l’identification de liens entre les fonctions de la vue fonctionnelle et des modules développés.
@@ -513,7 +513,7 @@ Les composants et fonctionnalités décrits dans les chapitres précédents sont
 La liste des environnements de production, ainsi qu’une description des responsabilités est décrite ci-dessous :
 \smallbreak
 \begin{itemize}
-\item	PROD : environnement PRODuctif, sur lesquels les utilisateurs CPP sont connectés (portail de service, portail EDI, portail web utilisateur et administrateur),
+\item	PROD : environnement PRODuctif, sur lesquels les utilisateurs sont connectés (portail de service, portail EDI, portail web utilisateur et administrateur),
 \item	PRA : environnement de secours Plan de Reprise d’Activité, permettant la restauration des éléments de PROD en cas d’incident majeur,
 \item	PPRD : environnement de PRé-PRoduction, permettant de qualifier les mises en production avant l'exécution en PROD,
 \item	SUPP : environnement de SUPPort, copie de la production permettant aux équipes de support de qualifier et reproduire les incidents avec des jeux de données les plus récentes,
@@ -546,9 +546,11 @@ Chacun de ces environnements possède une version de l'application. De cette man
 \newpage
 \section{Ingénierie}
 \subsection{Gestion des exigences}
-Les exigences sont définies lors d'échanges entre le client et les titulaires. Celles de type fonctionnel relèvent du respect de règles de gestion spécifiques ou transverses. Elles orientent notamment les tests qui seront effectués en recette. Les exigences techniques quant à elles ont été définies au commencement du projet et évoluent selon les besoins du client. Elles sont présentées comme des bonnes pratiques et leur but est de produire un code robuste (pas de dérive mémoire, pas de dérive des temps de réponse) et de savoir diagnostiquer les anomalies  afin d'être capable de rétablir les services rapidement.
+Les exigences sont définies lors d'échanges entre le client et les titulaires. Celles de type fonctionnel relèvent du respect de règles de gestion spécifiques ou transverses.
 \smallbreak
-Elles ont été définies par les équipes transverses du projet sur la structuration du code notamment : les patterns à respecter ou à proscrire, les points de contention, la scalabilité de l'application et la volumétrie. L'ensemble de ces exigences sont rappelées aux équipes lors de réunions régulières et sont traçées dans documents accessibles à tous les membres du projet.
+Elles orientent notamment les tests qui seront effectués en recette. Les exigences techniques quant à elles ont été définies au commencement du projet et évoluent selon les besoins du client. Elles sont présentées comme des bonnes pratiques et leur but est de produire un code robuste (pas de dérive mémoire, pas de dérive des temps de réponse) et de savoir diagnostiquer les anomalies  afin d'être capable de rétablir les services rapidement. Elles ont été définies par les équipes transverses du projet sur la structuration du code notamment : les patterns à respecter ou à proscrire, les points de contention, la scalabilité de l'application et la volumétrie.
+\smallbreak
+L'ensemble de ces exigences sont rappelées aux équipes lors de réunions régulières et sont traçées dans documents accessibles à tous les membres du projet.
 \smallbreak
 Elles concernent :
 \smallbreak
@@ -572,7 +574,7 @@ Les livrables de l'équipe que j'intègre (build) sont des versions de la soluti
 \item des évolutions qui sont des fonctionnalités en plus, non prévues dans le cahier des charges.
 \end{itemize}
 \medbreak
-Une trop grande granularité\footnote{La granularité correspond au numéro de version. Il peut varier selon des modifications correctives, évolutives ou autres actions sur le système.} au niveau des versions des modules et des services applicatifs entraine une lourdeur de la gestion de la configuration. Une multiplication des versions au niveau MAS entraine un impact trop important sur les \gls{MAP}.
+Une trop grande granularité\footnote{La granularité correspond au numéro de version. Il peut varier selon des modifications correctives, évolutives ou autres actions sur le système.} au niveau des versions des modules et des services applicatifs entraine une lourdeur de la gestion de la configuration. Une multiplication des versions au niveau \gls{MAS} entraine un impact trop important sur les \gls{MAP}.
 \smallbreak
 L’évolution du numéro de version suit les règles suivantes :
 \smallbreak
@@ -597,7 +599,7 @@ Le fonctionnement des incrémentations de numéro de versions est explicité dan
 \section{Management de projet}
 Chacun des sept pôles du projet a une équipe de pilotage. L'une de leur mission est le suivi d'activités de tous les membres de leur pôle. 
 \subsection{Planification}
-Chacun des pôles est partagé en domaines. La figure \ref{domaines} représente la répartition des acteurs selon les domaines dans le pôle build, que j'ai intégré lors de ma formation à Sopra Stéria. Les responsables sont chargés de la répartition des tâches sur les ressources disponibles. Ils doivent s'assurer que toutes les tâches relatives à leur domaine peuvent être complétées dans les temps impartis.
+Chacun des pôles est partagé en domaines. La figure \ref{domaines} représente la répartition des acteurs selon les domaines dans le pôle build, que j'ai intégré lors de ma formation à Sopra Steria. Les responsables sont chargés de la répartition des tâches sur les ressources disponibles. Ils doivent s'assurer que toutes les tâches relatives à leur domaine peuvent être complétées dans les temps impartis.
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[width=\textwidth,keepaspectratio]{domaines.png}
@@ -622,16 +624,16 @@ On peut  y voir :
 		\label{pdc}
 	\end{center}
 \end{figure}
-Il y a plusieurs niveaux de plan de charges. Le plan de charges niveau projet prend en compte tous les domaines de chacun des pôles et les chantiers transverses. Les plans de charge de pôle sont composés des chantiers\footnote{Un chantier est un ensemble de tâches à réaliser pour la réalisation d'un nouveau développement.} qui les concernent et d'une décomposition plus précise des tâches de leurs domaines. Certains chantiers transverses ont leur propre plan de charges afin d'assurer un meilleur suivi des acteurs mobilisés pour leur réalisation.
+Il y a plusieurs niveaux de plan de charges. Le plan de charges niveau projet prend en compte tous les domaines de chacun des pôles et les chantiers\footnote{Un chantier est un ensemble de tâches à réaliser pour la réalisation d'un nouveau développement.} transverses. Les plans de charge de pôle sont composés des chantiers qui les concernent et d'une décomposition plus précise des tâches de leurs domaines. Certains chantiers transverses ont leur propre plan de charges afin d'assurer un meilleur suivi des acteurs mobilisés pour leur réalisation.
 \subsubsection{Gestion des risques et de la qualité}
 Les risques applicatifs sont intrinsèquement liés à la qualité du code. Des standards de qualité du code sont imposés et contrôlés. Une de mes tâches transverses a été de contrôler le bon respect de ces standards. Tous les acteurs du projet sont sensibilisés aux risques et aux engagements pris auprès des clients quant à la qualité du code.\\
 Les informations sont partagées lors de plusieurs réunions hebdomadaires et mensuelles. Je réalise aussi un point quotidien concernant le domaine duquel je suis responsable afin de déterminer l'avancement des tâches attribuées et celles à prévoir. J'assiste à une réunion hebdomadaire dans laquelle sont conviés les acteurs transverses, les responsables de domaine et l'équipe de pilotage du pôle build. Une réunion mensuelle est organisée avec tous les acteurs du projet afin de donner les grandes directions.
 \paragraph{Dépassement des temps}
 ~~\\
-Lorsque le chiffrage est réalisé, il prend en compte la difficulté de la tâche concernée, le contexte dans lequel elle s'inscrit (besoin d'appréhender des notions transverses,  aborder des nouvelles technologies) mais aussi une contingence. Ce budget est accordé à une ou plusieurs ressources pour prendre en compte la mise-en-oeuvre complète de la charge : réalisation, test sur un poste local, test sur un environnement projet. Ce budget peut être ré-évalué lors de la réalisation de la tâche. Si une tâche s'avère plus longue ou fastidieuse qu'intialement prévu il est du devoir de la personne qui réalise la tâche de remonter une alerte au responsable de son domaine afin qu'il prenne les décisions nécessaires.
+Lorsque le chiffrage est réalisé, il prend en compte la difficulté de la tâche concernée, le contexte dans lequel elle s'inscrit (besoin d'appréhender des notions transverses,  aborder des nouvelles technologies) mais aussi une contingence. Ce budget est accordé à une ou plusieurs ressources pour prendre en compte la mise en œuvre complète de la charge : réalisation, test sur un poste local, test sur un environnement projet. Ce budget peut être ré-évalué lors de la réalisation de la tâche. Si une tâche s'avère plus longue ou fastidieuse qu'intialement prévu il est du devoir de la personne qui réalise la tâche de remonter une alerte au responsable de son domaine afin qu'il prenne les décisions nécessaires.
 \paragraph{Manipulations manuelles}
 ~~\\
-Les actions manuelles peuvent représenter un risque et sont toujours réalisées avec précaution. Les procédures automatisées sont préférées. L'automatisation peut intervenir sur tous les pôles du projets. Ainsi, des campagnes de tests du portail web ont été entièrement automatisées. Les scénarios automatisés seront réutilisés afin de s'assurer des non-régression\footnote{Une régression est une fonctionnalité qui cesse de fonctionner.} sur les nouveaux développements. Ils représenteront un gain de temps considérable en plus de limiter le risque de régression non détectée. Des scripts de déploiement automatique ont aussi été mis en place. Ces derniers permettent de s'assurer du bon déploiement de tous les composants dans les versions correspondantes et assurent un un temps d'exécution de la tâche constant et rapide.  
+Les actions manuelles peuvent représenter un risque et sont toujours réalisées avec précaution. Les procédures automatisées sont préférées. L'automatisation peut intervenir sur tous les pôles du projets. Ainsi, des campagnes de tests du portail web ont été entièrement automatisées. Les scénarios automatisés seront réutilisés afin de s'assurer des non-régressions\footnote{Une régression est une fonctionnalité qui cesse de fonctionner.} sur les nouveaux développements. Ils représenteront un gain de temps considérable en plus de limiter le risque de régression non détectée. Des scripts de déploiement automatique ont aussi été mis en place. Ces derniers permettent de s'assurer du bon déploiement de tous les composants dans les versions correspondantes et assurent un temps d'exécution de la tâche constant et rapide.  
 \paragraph{Contrôle de la qualité}
 ~~\\
 Des outils open-source sont utilisés pour s'assurer de la qualité du code. 
@@ -639,7 +641,7 @@ Des outils open-source sont utilisés pour s'assurer de la qualité du code.
 \item Jenkins : Outil d'intégration continue,
 \item Sonar Qube : Outil de mesure de la qualimétrie du code.
 \end{itemize}
-Jenkins nous permet d'exécuter des jobs sur des machines distantes. La bonne compilation de chaque développement réalisé est contrôlé grâce à un job maven lancé à intervalles réguliers. Ce même job lance une analyse Sonar Qube du code source.\\
+Jenkins nous permet d'exécuter des jobs sur des machines distantes. La bonne compilation de chaque développement réalisé est contrôlée grâce à un job maven lancé à intervalles réguliers. Ce même job lance une analyse Sonar Qube du code source.\\
 Sonar Qube possède des indicateurs représentés par une lettre allant de A à E. Une de mes tâches transverses est de m'assurer du respect des règles définies dans Sonar Qube. Pour réaliser cette tâche, je réalise un support que je présente aux réunions hebdomadaires aux responsables de domaines afin que ceux-ci puissent avoir une vision globale des règles les plus violées. J'ai aussi exposé un support lors d'une réunion mensuelle afin de sensibiliser tous les acteurs du projet à ces règles de bonne conduite applicative.
 \subsection{Conduite du changement}
 La conduite du changement est un sujet majeur dans ce projet qui mobilise un grand nombre de collaborateurs. Le changement passe par une bonne communication entre les différentes composantes du projet. Toute démarche d'amélioration constructive est encouragée.\\
@@ -648,7 +650,7 @@ Des mesures plus légères peuvent améliorer la rigueur dans le code. J'ai nota
 \clearpage
 \newpage
 \section{Challenges et accomplissement}
-Mon expérience de plus d'un an sur le projet m'a permis de monter en compétence sur des sujets fonctionnels et techniques du projet Chorus Pro. Je me suis d'abord positionné en tant que responsable adjoint, puis en tant que responsable. J'ai aussi aborder des notions de gestion d'équipe :
+Mon expérience de plus d'un an sur le projet m'a permis de monter en compétence sur des sujets fonctionnels et techniques du projet Chorus Pro. Je me suis d'abord positionné en tant que responsable adjoint, puis en tant que responsable. J'ai aussi abordé des notions de gestion d'équipe :
 \smallbreak
 \begin{itemize}
 \item la répartition des tâches,
@@ -658,9 +660,9 @@ Mon expérience de plus d'un an sur le projet m'a permis de monter en compétenc
 \medbreak
 De part mon ambition et ma curiosité professionnelle, j'ai pu prendre en charge des tâches transverses concernant la gestion de la qualité du code fourni mais aussi le partage des bonnes pratiques.
 \smallbreak
-Mon implication dans ses tâches m'a permis d'apprendre à communiquer avec nos équipes notamment en réalisant des supports à destination des développeurs. Je travaille régulièrement sur de nouveaux supports dans le but d'améliorer la sécurité applicative et les performances de l'application (respect des standards de sécurité, optimisation des requêtes \gls{SQL}).
+Mon implication dans ces tâches m'a permis d'apprendre à communiquer avec nos équipes notamment en réalisant des supports à destination des développeurs. Je travaille régulièrement sur de nouveaux supports dans le but d'améliorer la sécurité applicative et les performances de l'application (respect des standards de sécurité, optimisation des requêtes \gls{SQL}).
 \medbreak
-Ces différentes actions m'ont permis d'étendre mon réseau de connaissances au sein de l'entreprise et de m'impliquer davantage dans divers projets de Sopra Stéria, me permettant ainsi, de comprendre l'activité générale et la politique du groupe. Dans cette optique, j'ai participé activement, en interne, à un projet qui propose aujourd'hui aux collaborateurs d'avoir accès à différents retours d'expériences, leur permettant de mieux comprendre les actions, conséquences et erreurs ou réussites à reproduire ou à éviter dans leurs futures missions.
+Ces différentes actions m'ont permis d'étendre mon réseau de connaissances au sein de l'entreprise et de m'impliquer davantage dans divers projets de Sopra Steria, me permettant ainsi de comprendre l'activité générale et la politique du groupe. Dans cette optique, j'ai participé activement, en interne, à un projet qui propose aujourd'hui aux collaborateurs d'avoir accès à différents retours d'expériences, leur permettant de mieux comprendre les actions, conséquences et erreurs ou réussites à reproduire ou à éviter dans leurs futures missions.
 \newpage
 \section{Analyse critique}
 Le bon déroulement du projet est observable grâce aux trois axes suivants :
@@ -672,7 +674,7 @@ Le bon déroulement du projet est observable grâce aux trois axes suivants :
 \end{itemize}
 \medbreak
 Beaucoup de processus sont mis en place pour améliorer et optimiser les échanges entre les différents pôles. Ces processus sont essentiels au bon déroulement du projet. Ils permettent d'obtenir plus de clarté, d'organisation et de temps. J'appuierai mon argumentation sur le processus de traitement d'une anomalie décrit sur la figure \ref{cycleVieAnomalie}.\\
-Ce processus fait intervenir 3 acteurs différents : le client, le pôle de test, le pôle du build. 
+Ce processus fait intervenir trois acteurs différents : le client, le pôle de test, le pôle du build. 
 \begin{figure}[!hp]
 		\begin{center}
 			\includegraphics[width=1.1\textwidth,keepaspectratio]{cycleAnomalie2.png}
@@ -683,13 +685,13 @@ Ce processus fait intervenir 3 acteurs différents : le client, le pôle de test
 \clearpage
 \newpage
 Ce processus permet de stabiliser des versions en recette avant de les mettre en production et d'organiser le travail des développeurs. Un stock important d'anomalies signifie que des développements correctifs auront lieu dans les versions suivantes de l'application.\\
-En un an, près de 10 000 anomalies ont été identifiées par les titulaires (Groupe Sopra Stéria - Capgemini) ou par le client. Pour chacune d'entre elles, une analyse a eu lieu dans les équipes de tests, à la suite de quoi une majorité des anomalies sont retransmises au build. Je porte mon intérêt à ce moment précis du processus et aux moyens par lesquels une amélioration pourrait y être apportée.\\
-A ce moment-là c'est aux équipes du build d'apporter une analyse du problème applicatif et de la corriger dans le cas nominal.
+En un an, près de 10 000 anomalies ont été identifiées par les titulaires (Sopra Steria - Capgemini) ou par le client. Pour chacune d'entre elles, une analyse a eu lieu dans les équipes de tests, à la suite de quoi une majorité des anomalies ont été retransmises au build. Je porte mon intérêt à ce moment précis du processus et aux moyens par lesquels une amélioration pourrait y être apportée.\\
+A ce moment-là, c'est aux équipes du build d'apporter une analyse du problème applicatif et de la corriger dans le cas nominal.
 \smallbreak
 D'autres cas sont à envisager :
 \smallbreak
 \begin{itemize}
-\item l'anomalie est un faux positif car elle est issue d'un problème de jeux de données érronées ou n'est pas avérée,
+\item l'anomalie est un faux positif car elle est issue d'un problème de jeu de données erronées ou n'est pas avérée,
 \item l'anomalie est une évolution de l'application et doit donc être traitée par le bureau d'études du projet pour validation,
 \item l'anomalie est un doublon d'une anomalie déjà existante, voire déjà corrigée.
 \end{itemize} 
@@ -709,14 +711,14 @@ Les anomalies ont une gravité :
 \newpage
 \section{Bilan}
 Ce contrat de professionalisation m'a beaucoup apporté. J'ai pu monter en compétence sur des domaines qui m'étaient jusqu'alors très peu accessibles. Les échanges avec les équipes m'ont aussi formé pour les démarches administratives et le fonctionnement en entreprise. Les responsabilités qui m'ont été confiées par mes différents responsables, que je remercie une fois de plus, m'ont permis de prendre des initiatives avec confiance. Cela m'a amené à faire preuve d'un professionnalisme que je n'avais jamais pu adopter auparavant.\\
-Ce projet ambitieux nécessite une implication sans précédent pour moi et une conscience professionnelle forte. Elles permettent de réaliser les développements nécessaires dans les temps impartis malgré le retard que le projet avait intialiement pris. Il est parfois nécessaire de corriger des anomalies bloquantes avant une livraison en production tout en tenant compte des jalons sur des développements correctifs en parallèle.\\
+Ce projet ambitieux nécessite une implication importante et une conscience professionnelle forte. Elles permettent de réaliser les développements nécessaires dans les temps impartis, malgré le retard que le projet avait initialement pris. Il est parfois nécessaire de corriger des anomalies bloquantes avant une livraison en production tout en tenant compte des jalons sur des développements correctifs en parallèle.\\
 Le fait d'évoluer dans un environnement aussi riche et diversifié est une chance. L'équipe est composée de nombreux profils : experts, intermédiaires et débutants. Les échanges n'en sont que plus enrichissants, tous les acteurs apprennent des autres et l'entraide est naturelle.
 L'uniformité du code grâce aux normes de développement que nous respectons permet de s'adapter plus facilement aux tâches qui nous sont confiées.
 La documentation, les commentaires et la bonne structuration du code est indispensable. Nous devons pouvoir fournir du code maintenable facilement et durablement.
 \newpage
 \clearpage
 \section{Conclusion}
-Je suis très satisfait d’avoir effectué mon stage ainsi que mon alternance dans l'entreprise Sopra Stéria car cela m’a permis de vivre une forte expérience du travail en entreprise. Grâce à cette formation, j’ai pu m’enrichir énormément autant sur le plan technique que sur le plan humain.
+Je suis très satisfait d’avoir effectué mon stage ainsi que mon alternance dans l'entreprise Sopra Steria car cela m’a permis de vivre une forte expérience du travail en entreprise. Grâce à cette formation, j’ai pu m’enrichir énormément autant sur le plan technique que sur le plan humain.
 \medbreak
 J’ai découvert le travail au sein d'une grande équipe qui est un réel atout et à la fois une contrainte forte. La diversité des profils et la densité des équipes favorisent l'entraide entre les collaborateurs tout en obligeant à obéir à une certaine rigueur dans la mesure où le travail d'une personne importe à de nombreux autres collaborateurs. J’ai donc redoublé de vigilance lors de l’exécution de mes tâches en essayant de me fixer des objectifs Spécifiques, Mesurables, Acceptables, Réalistes et Temporellement définis (SMART).
 \medbreak
@@ -725,7 +727,7 @@ La bonne humeur au sein du projet m'a permis de faire de magnifiques rencontres 
 Cette année, mon stage a confirmé l'importance du travail en équipe et de conditions de travail optimales au profit des objectifs fixés.
 \paragraph{Conclusion}
 ~~\\\\
-Doing my internship and study program at Sopra Stéria was very satisfying for me. I lived a very strong professional experience in this company. Thanks to this training, I improved a lot on a technical level as much as on a human level. I also discovered how to work in a big team: it can be a huge advantage as much as it can be a strong inconvenience.
+Doing my internship and study program at Sopra Steria was very satisfying for me. I lived a very strong professional experience in this company. Thanks to this training, I improved a lot on a technical level as much as on a human level. I also discovered how to work in a big team: it can be a huge advantage as much as it can be a strong inconvenience.
 \newpage
 The diversity in such a big team enables colleagues to actually work together and help each other. This requires a lot of rigor since one person’s inexpert modification may affect the work of many co-workers. This is why I was always careful and focused while executing my tasks, especially by following the SMART criterias : the goals that I set for myself were Specific, Measurable, Acceptable, Realistic and Temporally defined (SMART).
 \medbreak
