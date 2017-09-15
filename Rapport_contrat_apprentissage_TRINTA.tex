@@ -17,6 +17,12 @@
 \usepackage[automake]{glossaries}
 \usepackage[frenchb]{babel}
 
+%Environnement pour la bibliographie
+\newenvironment{biblioEnvir}[1]{%
+\large
+%\setlength{\rightmargin}{#1}%
+}
+
 %Trop moche en large
 %\renewcommand\cftsecfont{\LARGE}
 %\renewcommand\cftsecpagefont{\LARGE}
@@ -112,7 +118,7 @@ Les technologies utilisées pour développer cette solution technique sont~:
 \item[•] \gls{HTML} 5,
 \item[•] \gls{CSS} 3,
 \item[•] JavaScript,
-\item[•] \gls{SQL},
+\item[•] \gls{SQL}.
 \end{itemize}
 \medbreak
 J'ai débuté sur ce projet le 23 Mai 2016 au cours de mon stage. Puis, j’ai continué mon insertion professionnelle à partir de Septembre 2016 en tant qu'alternant.
@@ -129,6 +135,7 @@ During my study training program at Sopra Steria, I took part in a project invol
 \item[•] HTML 5,
 \item[•] CSS 3,
 \item[•] JavaScript,
+\item[•] \gls{SQL}.
 \end{itemize}
 ~~\\
  I joined the project on May, 23rd 2016 as an intern and I continued my professional integration in September 2016 when I started my study program. As part of my study program, I was able to take on responsibilities and to comprehend the global notions of a project. The different aspects that I will address in this report are various : team managing, planning, risk management and other technical aspects for which I will go into details later on. 
@@ -725,8 +732,9 @@ The diversity in such a big team enables colleagues to actually work together an
 I learned how to improve my skills on new technologies and specific frameworks that allowed me to reach positions in which I had a lot of responsibility. Therefore, I familiarized myself with the notion of team management, especially regarding the way tasks were shared and the way we dealt with risks. Thanks to my tutor and other co-workers’ advice, I took initiative and started working on tasks that represented a challenge for me like the realization of technical points or the writing of the technical conception of a subproject.
 \medbreak
 The general good mood that prevailed in the team working on this project allowed me to meet a lot of wonderful people despite the urgency of the deliveries. The outcome of my study training program exceeded all expectations I had and allowed me to gain a lot of professional experience and skills. I was able to apply some aspects of IT to situations I never had to face before. This year, my experience confirmed the importance of team work and optimal work conditions in the quest of achieving set goals.  
-\newpage
 \clearpage
+\newpage
+\begin{biblioEnvir}{8cm}
 \appendix
 \renewcommand
 \listfigurename{Résumé des figures.}
@@ -737,13 +745,11 @@ The general good mood that prevailed in the team working on this project allowed
 \makeatother
 \nocite{*}
 \begingroup
-%\def\sloppy{%
-%  \tolerance 1%
- % \emergencystretch 1000em%
-  %\vfuzz\hfuzz}
+\makeatletter
 \raggedright
 \sloppy
 \bibliographystyle{plain}
 \bibliography{dixitsbiblio}
 \endgroup
+\end{biblioEnvir}
 \end{document}
